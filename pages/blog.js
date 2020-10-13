@@ -95,14 +95,9 @@ const Blog = () => {
               justifyContent="flex-start"
               alignItems="flex-start"
               maxWidth="700px"
-              mt={8}
+              mt={0}
             >
-              <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={700}>
-                Most Popular
-              </Heading>
-              <BlogPost {...styleGuides} />
-              <BlogPost {...stripeDesign} />
-              <BlogPost {...monorepo} />
+
             </Flex>
           )}
           <Flex
@@ -110,7 +105,7 @@ const Blog = () => {
             justifyContent="flex-start"
             alignItems="flex-start"
             maxWidth="700px"
-            mt={8}
+            mt={0}
           >
             <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={700}>
               All Posts

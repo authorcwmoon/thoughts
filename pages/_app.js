@@ -16,6 +16,8 @@ import theme from '../styles/theme';
 import { prismLightTheme, prismDarkTheme } from '../styles/prism';
 import MDXComponents from '../components/MDXComponents';
 import SEO from '../next-seo.config';
+import '../css/main.css'
+
 
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode();
@@ -27,17 +29,6 @@ const GlobalStyle = ({ children }) => {
         styles={css`
           ${colorMode === 'light' ? prismLightTheme : prismDarkTheme};
 
-          * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-    
-        body, html {
-            font-family: ${props => props.theme.fonts.main};
-            height: 100%;
-        }
-
           ::selection {
             background-color: #47a3f3;
             color: #fefefe;
@@ -47,6 +38,7 @@ const GlobalStyle = ({ children }) => {
             min-width: 360px;
             scroll-behavior: smooth;
           }
+
 
           #__next {
             display: flex;

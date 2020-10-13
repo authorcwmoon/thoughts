@@ -1,10 +1,12 @@
 import React from 'react';
 import { theme as chakraTheme } from '@chakra-ui/core';
 
+
+
+
 const theme = {
   ...chakraTheme,
   fonts: {
-    ...chakraTheme.fonts,
     body: "Libre Baskerville, serif",
     Heading: "Libre Baskerville, serif",
     mono: "Libre Baskerville, serif",

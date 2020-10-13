@@ -29,18 +29,14 @@ const Container = ({ children }) => {
     dark: 'rgba(23, 25, 35, 0.8)'
   };
 
-  const h1 = {
-   font: "Libre Baskerville, Serif"
-  };
-
 
 
   return (
     <>
       <StickyNav
         flexDirection="row"
-        justifyContent="space-between"
         alignItems="center"
+        justify="center"
         maxWidth="900px"
         width="100%"
         bg={navBgColor[colorMode]}
@@ -51,14 +47,15 @@ const Container = ({ children }) => {
         mx="auto"
       >
         <IconButton
+          mr={10}
           aria-label="Toggle dark mode"
           icon={colorMode === 'dark' ? 'sun' : 'moon'}
           onClick={toggleColorMode}
         />
         <Box>
-          <NextLink href="/dashboard" passHref>
+          <NextLink href="/" passHref>
             <Button as="a" variant="ghost" p={[1, 4]}>
-              Dashboard
+              The Journal of C.W. Moon
             </Button>
           </NextLink>
           <NextLink href="/blog" passHref>

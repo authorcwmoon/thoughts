@@ -2,11 +2,11 @@ import React from 'react';
 import NextLink from 'next/link';
 import { Flex, Link, IconButton } from '@chakra-ui/core';
 
-import NowPlaying from './NowPlaying';
+import Subscribe from './Subscribe';
 
 const Footer = () => (
   <Flex align="center" mb={4} direction="column">
-    <NowPlaying />
+    <Subscribe />
     <div>
       <Link href="https://twitter.com/leeerob" title="Twitter" isExternal>
         <IconButton

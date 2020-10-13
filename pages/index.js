@@ -38,7 +38,7 @@ const Index = () => {
             Journal
           </Heading>
           <Text color={secondaryTextColor[colorMode]}>
-           This is a place where stories come to be told. 
+           I've been writing for the last 8 years in the margins of pages, random notebooks, and my text editor. I started reading from hymn books and the back of Captain Crunch cereal boxes. This journal bridges the gap between the childhood mind and the enterprise entrepreneur journey.
           </Text>
         </Flex>
         <Flex

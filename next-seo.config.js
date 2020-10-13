@@ -1,31 +1,31 @@
-const title = 'Lee Robinson – Developer, writer, creator.';
+const title = 'The Journal of C.W. Moon - Small thoughts big stories.';
 const description =
-  'Front-end developer, JavaScript enthusiast, and course creator.';
+  'Spinning up stories that land on your table.';
 
 const SEO = {
   title,
   description,
-  canonical: 'https://leerob.io',
+  canonical: 'https://cwmoon.com',
   openGraph: {
     type: 'website',
     locale: 'en_IE',
-    url: 'https://leerob.io',
+    url: 'https://cwmoon.com',
     title,
     description,
     images: [
       {
-        url: 'https://leerob.io/static/images/og.jpg',
+        // url: 'https://leerob.io/static/images/og.jpg',
         alt: title,
         width: 1280,
         height: 720
       }
     ]
   },
-  twitter: {
-    handle: '@leeerob',
-    site: '@leeerob',
-    cardType: 'summary_large_image'
-  }
+  // twitter: {
+  //   handle: '@leeerob',
+  //   site: '@leeerob',
+  //   cardType: 'summary_large_image'
+  // }
 };
 
 export default SEO;

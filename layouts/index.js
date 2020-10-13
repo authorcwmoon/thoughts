@@ -36,7 +36,7 @@ export default function BlogLayout({ children, frontMatter }) {
 
   return (
     <Container>
-      <BlogSeo url={`https://leerob.io/blog/${slug}`} {...frontMatter} />
+      <BlogSeo url={`https://cwmoon.com/journal/${slug}`} {...frontMatter} />
       <Stack
         as="article"
         spacing={8}
@@ -67,13 +67,13 @@ export default function BlogLayout({ children, frontMatter }) {
             <Flex align="center">
               <Avatar
                 size="xs"
-                name="Lee Robinson"
-                src="https://bit.ly/33vEjhB"
+                name="C.W. Moon"
+                src="https://bit.ly/34WFAj1"
                 mr={2}
               />
               <Text fontSize="sm" color={textColor[colorMode]}>
                 {frontMatter.by}
-                {'Lee Robinson / '}
+                {'C.W. Moon / '}
                 {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
               </Text>
             </Flex>

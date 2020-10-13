@@ -5,6 +5,7 @@ const withMdxEnhanced = require('next-mdx-enhanced');
 module.exports = withMdxEnhanced({
   layoutPath: 'layouts',
   defaultLayout: true,
+  target: 'serverless',
   remarkPlugins: [
     require('remark-autolink-headings'),
     require('remark-slug'),

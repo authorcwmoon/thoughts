@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { NextSeo } from 'next-seo';
 import {
@@ -21,10 +22,11 @@ import { frontMatter as styleGuides } from './blog/style-guides-component-librar
 import { frontMatter as stripeDesign } from './blog/how-stripe-designs-beautiful-websites.mdx';
 import { frontMatter as monorepo } from './blog/monorepo-lerna-yarn-workspaces.mdx';
 
-const url = 'https://leerob.io/blog';
-const title = 'Blog – Lee Robinson';
+const url = 'https://cwmoon.com/journal';
+const title = 'Journal – C.W. Moon';
 const description =
-  'Thoughts on the software industry, programming, tech, videography, music, and my personal life.';
+  'Small thoughts, big stories.';
+
 
 const Blog = () => {
   const [searchValue, setSearchValue] = useState('');
@@ -70,8 +72,8 @@ const Blog = () => {
             alignItems="flex-start"
             maxWidth="700px"
           >
-            <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
-              Blog
+            <Heading letterSpacing="tight" mb={2} as="h1" size="2xl" fontWeight={100}>
+              Journal
             </Heading>
             <Text color={secondaryTextColor[colorMode]}>
               {`I've been writing online since 2014, mostly about web development and tech careers.
@@ -90,14 +92,7 @@ const Blog = () => {
             </InputGroup>
           </Flex>
           {!searchValue && (
-            <Flex
-              flexDirection="column"
-              justifyContent="flex-start"
-              alignItems="flex-start"
-              maxWidth="700px"
-              mt={0}
-            >
-
+            <Flex>
             </Flex>
           )}
           <Flex
@@ -107,8 +102,8 @@ const Blog = () => {
             maxWidth="700px"
             mt={0}
           >
-            <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={700}>
-              All Posts
+            <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={100}>
+              Content
             </Heading>
             {!filteredBlogPosts.length && 'No posts found.'}
             {filteredBlogPosts.map((frontMatter) => (

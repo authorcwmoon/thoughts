@@ -14,7 +14,7 @@ import {
 
 import Container from '../components/Container';
 import Subscribe from '../components/Subscribe';
-import ViewCounter from '../components/ViewCounter';
+// import ViewCounter from '../components/ViewCounter';
 import BlogSeo from '../components/BlogSeo';
 
 const editUrl = (slug) =>
@@ -80,7 +80,7 @@ export default function BlogLayout({ children, frontMatter }) {
             <Text fontSize="sm" color="gray.500" minWidth="100px" mt={[2, 0]}>
               {frontMatter.readingTime.text}
               {` • `}
-              <ViewCounter id={slug} />
+              {/* <ViewCounter id={slug} /> */}
             </Text>
           </Flex>
         </Flex>

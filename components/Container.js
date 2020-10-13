@@ -60,9 +60,9 @@ const Container = ({ children }) => {
           </NextLink>
           <NextLink href="/blog" passHref>
             <Button as="a" variant="ghost" p={[1, 4]}>
-              Blog
+              Contents
             </Button>
-          </NextLink>
+          {/* </NextLink>
           <NextLink href="/about" passHref>
             <Button as="a" variant="ghost" p={[1, 4]}>
               About
@@ -71,7 +71,7 @@ const Container = ({ children }) => {
           <NextLink href="/" passHref>
             <Button as="a" variant="ghost" p={[1, 4]}>
               Home
-            </Button>
+            </Button> */}
           </NextLink>
         </Box>
       </StickyNav>

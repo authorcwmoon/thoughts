@@ -8,7 +8,7 @@ const Footer = () => (
   <Flex align="center" mb={4} direction="column">
     <Subscribe />
     <div>
-      <Link href="https://twitter.com/leeerob" title="Twitter" isExternal>
+      {/* <Link href="https://twitter.com/leeerob" title="Twitter" isExternal>
         <IconButton
           aria-label="Twitter"
           icon="twitter"
@@ -51,7 +51,7 @@ const Footer = () => (
           color="gray.500"
           variant="ghost"
         />
-      </Link>
+      </Link> */}
       <Link href="mailto:me@leerob.io" title="Email" isExternal>
         <IconButton
           aria-label="Email"
@@ -62,7 +62,7 @@ const Footer = () => (
         />
       </Link>
     </div>
-    <div>
+    {/* <div>
       <NextLink href="/uses" passHref>
         <Link
           fontSize="sm"
@@ -96,7 +96,7 @@ const Footer = () => (
           /newsletter
         </Link>
       </NextLink>
-    </div>
+    </div> */}
   </Flex>
 );
 

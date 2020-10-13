@@ -29,6 +29,12 @@ const Container = ({ children }) => {
     dark: 'rgba(23, 25, 35, 0.8)'
   };
 
+  const h1 = {
+   font: "Libre Baskerville, Serif"
+  };
+
+
+
   return (
     <>
       <StickyNav

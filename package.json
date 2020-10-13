@@ -17,7 +17,8 @@
     "dev": "next",
     "start": "next start",
     "prettier": "prettier --write \"**/*.{html,js,json,md,mdx,yml}\"",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "postbuild": "next-on-netlify"
   },
 
 

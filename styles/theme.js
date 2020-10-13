@@ -5,12 +5,17 @@ const theme = {
   ...chakraTheme,
   fonts: {
     ...chakraTheme.fonts,
-    body: `Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"`
+    body: "Libre Baskerville, serif",
+    Heading: "Libre Baskerville, serif",
+    mono: "Libre Baskerville, serif",
+    text: "Libre Baskerville, serif",
+    main: 'Libre Baskerville, serif',
+
   },
   fontWeights: {
-    normal: 400,
-    medium: 600,
-    bold: 700
+    normal: 600,
+    medium: 700,
+    bold: 800
   },
   icons: {
     ...chakraTheme.icons,

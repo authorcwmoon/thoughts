@@ -51,9 +51,9 @@ const Index = () => {
           <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={200}>
             Contents
           </Heading>
-          <BlogPost {...styleGuides} />
+          {/* <BlogPost {...styleGuides} />
           <BlogPost {...stripeDesign} />
-          <BlogPost {...monorepo} />
+          <BlogPost {...monorepo} /> */}
         </Flex>
         {/* <Flex
           flexDirection="column"

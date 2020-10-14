@@ -20,6 +20,7 @@
     "postinstall": "patch-package",
     "postbuild": "next-on-netlify"
   },
+
   "dependencies": {
     "@chakra-ui/core": "0.8.0",
     "@emotion/core": "10.0.35",

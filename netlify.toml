@@ -1,3 +1,3 @@
 [build]
-command   = "next && next build"
+command   = "next build"
 publish = "out/"

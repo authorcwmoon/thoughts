@@ -14,7 +14,7 @@ import Container from '../components/Container';
 import { CustomLink } from '../components/MDXComponents';
 
 const url = 'https://leerob.io/about';
-const title = 'About Me – Lee Robinson';
+const title = 'About Me – CW ';
 
 const About = () => {
   const { colorMode } = useColorMode();

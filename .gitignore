@@ -10,7 +10,7 @@ public/sitemap.xml
 .netlify
 
 # Distribution folder
-dist/
+out/
 
 # cache folder
 .cache

@@ -2,6 +2,10 @@ const readingTime = require('reading-time');
 const mdxPrism = require('mdx-prism');
 const withMdxEnhanced = require('next-mdx-enhanced');
 
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/,
+});
+
 module.exports = withMdxEnhanced({
   layoutPath: 'layouts',
   defaultLayout: true,
@@ -27,4 +31,8 @@ module.exports = withMdxEnhanced({
 
     return config;
   }
+
+
+
+  
 });

@@ -30,7 +30,7 @@ const Subscribe = () => {
     e.preventDefault();
     setLoading(true);
 
-    const res = await fetch('https://cwmoon.com/.netlify/functions/subscribe', {
+    const res = await fetch('/api/subscribe', {
       body: JSON.stringify({
         email: inputEl.current.value
       }),
@@ -74,7 +74,7 @@ const Subscribe = () => {
       borderRadius={4}
       padding={6}
       my={4}
-      mw="500px"
+      w="100%"
     >
       <Heading as="h5" size="lg" mb={2}>
         Subscribe to the newsletter

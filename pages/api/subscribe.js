@@ -1,45 +1,23 @@
+require("dotenv").config()
+
 const fetch = require("node-fetch")
+const { BUTTONDOWN_API_KEY } = process.env
 
 exports.handler = async event => {
-  const { email } = req.body;
+  const payload = JSON.parse(event.body).payload
+  console.log(`Recieved a submission: ${payload.email}`)
 
-  if (!email) {
-    return res.status(400).json({ error: 'Email is required' });
-  }
-
-  try {
-    const API_KEY = process.env.BUTTONDOWN_API_KEY;
-    const response = await fetch(
-      `https://api.buttondown.email/v1/subscribers`,
-      {
-        body: JSON.stringify({
-          email,
-          tags: ['cwmoon.com']
-        }),
-        headers: {
-          Authorization: `Token ${API_KEY}`,
-          'Content-Type': 'application/json'
-        },
-        method: 'POST'
-      }
-    );
-
-    if (response.status >= 400) {
-      const text = await response.text();
-
-      if (text.includes('already subscribed')) {
-        return res.status(400).json({
-          error: `You're already subscribed to my mailing list.`
-        });
-      }
-
-      return res.status(400).json({
-        error: text
-      });
-    }
-
-    return res.status(201).json({ error: '' });
-  } catch (error) {
-    return res.status(500).json({ error: error.message || error.toString() });
-  }
-};
+  return fetch("https://api.buttondown.email/v1/subscribers", {
+    method: "POST",
+    headers: {
+      Authorization: `Token ${BUTTONDOWN_API_KEY}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email: payload.email, notes: payload.name }),
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log(`Submitted to Buttondown:\n ${data}`)
+    })
+    .catch(error => ({ statusCode: 422, body: String(error) }))
+}

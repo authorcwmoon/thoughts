@@ -1,7 +1,7 @@
 const subscribe = require('subscribe');
+const fetch = require("node-fetch")
 
-
-exports.handler = async (req, res) => {
+exports.handler = async event => {
   const { email } = req.body;
 
   if (!email) {

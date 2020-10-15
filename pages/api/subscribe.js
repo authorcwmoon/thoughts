@@ -1,3 +1,6 @@
+const subscribe = require('subscribe');
+
+
 exports.handler = async (req, res) => {
   const { email } = req.body;
 

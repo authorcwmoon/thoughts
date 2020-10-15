@@ -74,7 +74,7 @@ const Subscribe = () => {
       borderRadius={4}
       padding={6}
       my={4}
-      w="100%"
+      mw="500px"
     >
       <Heading as="h5" size="lg" mb={2}>
         Subscribe to the newsletter

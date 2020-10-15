@@ -38,8 +38,9 @@ const Index = () => {
             Preface
           </Heading>
           <Text color={secondaryTextColor[colorMode]}>
-           Captain Crunch taught me to read. Sugar coated word searches at breakfast turned into infinite scroll on my twitter feed. I couldn't keep my thoughts to 280 characters, so instead I share them here. This journal is a collection of ordinary stories for extraordinary people. I send regular newsletters--the paper kind--with the hope that you'll read it with your coffee.  Thanks for being here. 
-        </Flex>
+           Captain Crunch taught me to read. Sugar coated word searches at breakfast turned into infinite scroll on my twitter feed. I couldn't keep my thoughts to 280 characters, so instead I share them here. This journal is a collection of ordinary stories for extraordinary people. I send regular newsletters, the paper kind, with the hope that you'll read it with your coffee.  Thanks for being here.
+           </Text>
+           </Flex>
         <Flex
           flexDirection="column"
           justifyContent="flex-start"

@@ -54,7 +54,7 @@ const Container = ({ children }) => {
         />
         <Box>
           <NextLink href="/" passHref>
-            <Button as="a" variant="ghost" p={[1, 4]}>
+            <Button as="a" variant="ghost" color ="fafafa" p={[1, 4]}>
               The Journal of C.W. Moon
             </Button>
           </NextLink>

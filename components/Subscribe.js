@@ -77,10 +77,10 @@ const Subscribe = () => {
       mw="500px"
     >
       <Heading as="h5" size="lg" mb={2}>
-        Read my journal. 
+        Read my journal - 
       </Heading>
       <Text>
-        Breakfast table emails that taste best with coffee and a sunrise. 
+        Susbscribe for breakfast table emails that taste best with coffee.
       </Text>
       <InputGroup size="md" mt={4}>
         <Input

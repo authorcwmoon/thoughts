@@ -1,9 +1,13 @@
-exports.handler = async event => {
+exports.handler = async (event, context, callback) => {
   const { email } = JSON.parse(event.body);
 
-
   if (!email) {
-    return res.status(400).json({ error: 'Email is required' });
+    return {
+      statusCode: 400,
+      body: JSON.stringify({
+        error: 'Email is required'
+      })
+    };
   }
 
   try {
@@ -11,10 +15,7 @@ exports.handler = async event => {
     const response = await fetch(
       `https://api.buttondown.email/v1/subscribers`,
       {
-        body: JSON.stringify({
-          email,
-          tags: ['leerob.io']
-        }),
+        body: JSON.stringify({ email }),
         headers: {
           Authorization: `Token ${API_KEY}`,
           'Content-Type': 'application/json'
@@ -24,21 +25,22 @@ exports.handler = async event => {
     );
 
     if (response.status >= 400) {
-      const text = await response.text();
-
-      if (text.includes('already subscribed')) {
-        return res.status(400).json({
-          error: `You're already subscribed to my mailing list.`
-        });
-      }
-
-      return res.status(400).json({
-        error: text
-      });
+      return {
+        statusCode: 400,
+        body: JSON.stringify({
+          error: `There was an error subscribing to the newsletter.`
+        })
+      };
     }
 
-    return res.status(201).json({ error: '' });
+    return {
+      statusCode: 201,
+      body: JSON.stringify({ error: '' })
+    };
   } catch (error) {
-    return res.status(500).json({ error: error.message || error.toString() });
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: error.message || error.toString() })
+    };
   }
 };

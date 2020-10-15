@@ -30,7 +30,7 @@ const Subscribe = () => {
     e.preventDefault();
     setLoading(true);
 
-    const res = await fetch('/.netlify/functions/subscribe', {
+    const res = await fetch('https://cwmoon.com/.netlify/functions/subscribe', {
       body: JSON.stringify({
         email: inputEl.current.value
       }),

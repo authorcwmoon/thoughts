@@ -1,5 +1,3 @@
-import fetch from 'isomorphic-unfetch';
-
 exports.handler = async (event, context, callback) => {
   const { email } = JSON.parse(event.body);
 

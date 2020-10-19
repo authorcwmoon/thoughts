@@ -52,8 +52,8 @@ const Index = () => {
           <Heading letterSpacing="tight" mb={0} size="xl" alignSelf="Center" textAlign="center" fontWeight={100}>
             Table of Contents
           </Heading>
-          <Heading letterSpacing="tight" mt={4} mb={4} fontSize="28px" fontWeight={100}>
-           Chapter 1......Introductions
+          <Heading isTruncated letterSpacing="tight" mt={4} mb={4} fontSize="28px" fontWeight={100}>
+           Chapter 1......Childhood and other things I was bad at.
           </Heading>
           <Flex ml={4}>
           <BlogPost {...introGuide} />

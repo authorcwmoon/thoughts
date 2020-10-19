@@ -104,7 +104,7 @@ const Blog = () => {
             mt={0}
           >
             <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={100}>
-              Contents
+             Search most popular contents
             </Heading>
             {!filteredBlogPosts.length && 'No posts found.'}
             {filteredBlogPosts.map((frontMatter) => (

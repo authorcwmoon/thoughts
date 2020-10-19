@@ -52,12 +52,14 @@ const Index = () => {
           <Heading letterSpacing="tight" mb={0} size="xl" alignSelf="Center" textAlign="center" fontWeight={100}>
             Table of Contents
           </Heading>
-          <Heading isTruncated letterSpacing="tight" mt={4} mb={4} fontSize="28px" fontWeight={100}>
-           Chapter 1......Childhood and other things I was bad at.
+          <Heading letterSpacing="tight" mt={4} mb={4} minW={2} fontSize="25px" fontWeight={100}>
+           Chapter 1......Childhood and other things children are bad at. 
           </Heading>
-          <Flex ml={4}>
+          <Flex ml={4} minW={0}>
           <BlogPost {...introGuide} />
           </Flex>
+
+
 
           <Flex
           flexDirection="column"
@@ -66,13 +68,29 @@ const Index = () => {
           maxWidth="700px"
           mt={0}
         >
-          <Heading letterSpacing="tight" mt={4} mb={4} fontSize="28px" fontWeight={100}>
-           Chapter 2......Fish
+          <Heading letterSpacing="tight" mt={4} mb={4} fontSize="25px" fontWeight={100}>
+          Chapter 4......Collection of my most popular short stories. 
           </Heading>
           <Flex ml={4}>
           <BlogPost {...introGuide} />
           </Flex>
           </Flex>
+
+{/* 
+          <Flex
+          flexDirection="column"
+          justifyContent="flex-start"
+          alignItems="flex-start"
+          maxWidth="700px"
+          mt={0}
+        >
+          <Heading letterSpacing="tight" mt={4} mb={4} fontSize="25px" fontWeight={100}>
+          Chapter 8......Career advice and thought alternatives.
+          </Heading>
+          <Flex ml={4}>
+          <BlogPost {...introGuide} />
+          </Flex>
+          </Flex> */}
 
 
 

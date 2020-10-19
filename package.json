@@ -1,10 +1,10 @@
 {
-  "name": "leerob.io",
-  "description": "My personal website.",
+  "name": "cwmoon.com",
+  "description": "My journal.",
   "version": "0.0.0",
   "author": {
-    "name": "Lee Robinson",
-    "email": "me@leerob.io",
+    "name": "C.W. Moon",
+    "email": "author@cwmoon.com",
     "url": "https:/cwmoon.com"
   },
   "license": "MIT",

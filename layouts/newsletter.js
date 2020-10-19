@@ -57,13 +57,13 @@ export default function NewsletterLayout({ children, frontMatter }) {
             <Flex align="center">
               <Avatar
                 size="xs"
-                name="Lee Robinson"
+                name="C.W. Moon"
                 src="https://bit.ly/33vEjhB"
                 mr={2}
               />
               <Text fontSize="sm" color={textColor[colorMode]}>
                 {frontMatter.by}
-                {'Lee Robinson / '}
+                {'C.W. Moon / '}
                 {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
               </Text>
             </Flex>

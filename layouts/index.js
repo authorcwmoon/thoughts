@@ -17,11 +17,10 @@ import Subscribe from '../components/Subscribe';
 // import ViewCounter from '../components/ViewCounter';
 import BlogSeo from '../components/BlogSeo';
 
-const editUrl = (slug) =>
-  `https://github.com/leerob/leerob.io/edit/master/pages/blog/${slug}.mdx`;
+
 const discussUrl = (slug) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `https://leerob.io/blog/${slug}`
+    `https://cwmoon.com/blog/${slug}`
   )}`;
 
 export default function BlogLayout({ children, frontMatter }) {
@@ -89,10 +88,6 @@ export default function BlogLayout({ children, frontMatter }) {
         <Box>
           <Link href={discussUrl(slug)} isExternal>
             {'Discuss on Twitter'}
-          </Link>
-          {` • `}
-          <Link href={editUrl(slug)} isExternal>
-            {'Edit on GitHub'}
           </Link>
         </Box>
         <IframeResizer

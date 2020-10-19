@@ -8,6 +8,8 @@ import Subscribe from '../components/Subscribe';
 // import ProjectCard from '../components/ProjectCard';
 
 import { frontMatter as introGuide } from './blog/introductions-and-other-important-baseline-information.mdx';
+import { frontMatter as gettingstartedGuide } from './blog/a-place-to-start.mdx';
+
 // import { frontMatter as stripeDesign } from './blog/how-stripe-designs-beautiful-websites.mdx';
 // import { frontMatter as monorepo } from './blog/monorepo-lerna-yarn-workspaces.mdx';
 
@@ -56,11 +58,11 @@ const Index = () => {
            Chapter 1......Childhood and other things children are bad at. 
           </Heading>
           <Flex ml={4} minW={0}>
-          <BlogPost {...introGuide} />
+          {'More articles to come...'}
           </Flex>
 
 
-
+{/* 
           <Flex
           flexDirection="column"
           justifyContent="flex-start"
@@ -74,9 +76,8 @@ const Index = () => {
           <Flex ml={4}>
           <BlogPost {...introGuide} />
           </Flex>
-          </Flex>
+          </Flex> */}
 
-{/* 
           <Flex
           flexDirection="column"
           justifyContent="flex-start"
@@ -90,7 +91,10 @@ const Index = () => {
           <Flex ml={4}>
           <BlogPost {...introGuide} />
           </Flex>
-          </Flex> */}
+          <Flex ml={4}>
+          <BlogPost {...gettingstartedGuide} />
+          </Flex>
+          </Flex> 
 
 
 

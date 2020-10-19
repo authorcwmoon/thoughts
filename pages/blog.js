@@ -71,15 +71,17 @@ const Blog = () => {
             justifyContent="flex-start"
             alignItems="flex-start"
             maxWidth="700px"
+            mb={0}
           >
             <Heading letterSpacing="tight" mb={2} as="h1" size="2xl" fontWeight={100}>
               Journal
             </Heading>
             <Text color={secondaryTextColor[colorMode]}>
-              {`This a new edition of my journal. This year I've added ${blogPosts.length} entries.  More each week.
-                Use this search to filter by title.`}
+              {`This is the first online edition of my journal. I've added ${blogPosts.length} articles in the past two weeks. M0re each week.
+                Use the search below to filter by title.`}
+
             </Text>
-            <InputGroup my={4} mr={4} w="100%">
+            <InputGroup my={4} mr={4} mb={0} w="100%">
               <Input
                 aria-label="Search articles"
                 onChange={(e) => setSearchValue(e.target.value)}
@@ -102,7 +104,7 @@ const Blog = () => {
             mt={0}
           >
             <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={100}>
-              Content
+              Contents
             </Heading>
             {!filteredBlogPosts.length && 'No posts found.'}
             {filteredBlogPosts.map((frontMatter) => (

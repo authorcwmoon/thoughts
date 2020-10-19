@@ -7,7 +7,7 @@ import BlogPost from '../components/BlogPost';
 import Subscribe from '../components/Subscribe';
 // import ProjectCard from '../components/ProjectCard';
 
-// import { frontMatter as styleGuides } from './blog/style-guides-component-libraries-design-systems.mdx';
+import { frontMatter as introGuide } from './blog/introductions-and-other-important-baseline-information.mdx';
 // import { frontMatter as stripeDesign } from './blog/how-stripe-designs-beautiful-websites.mdx';
 // import { frontMatter as monorepo } from './blog/monorepo-lerna-yarn-workspaces.mdx';
 
@@ -40,21 +40,63 @@ const Index = () => {
           <Text color={secondaryTextColor[colorMode]}>
            Captain Crunch taught me to read. Sugar coated word searches at breakfast turned into infinite scroll on my twitter feed. I couldn't keep my thoughts to 280 characters, so instead I share them here. This journal is a collection of ordinary stories for extraordinary people. I send regular newsletters, the paper kind, with the hope that you'll read it with your coffee.  Thanks for being here.
            </Text>
-           </Flex>
-        <Flex
+         </Flex>
+
+          <Flex
           flexDirection="column"
           justifyContent="flex-start"
           alignItems="flex-start"
           maxWidth="700px"
-          mt={8}
+          mt={0}
         >
-          <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={200}>
-            Contents
+          <Heading letterSpacing="tight" mb={0} size="xl" alignSelf="Center" textAlign="center" fontWeight={100}>
+            Table of Contents
           </Heading>
-          {/* <BlogPost {...styleGuides} />
-          <BlogPost {...stripeDesign} />
+          <Heading letterSpacing="tight" mt={4} mb={4} fontSize="28px" fontWeight={100}>
+           Chapter 1......Introductions
+          </Heading>
+          <Flex ml={4}>
+          <BlogPost {...introGuide} />
+          </Flex>
+
+          <Flex
+          flexDirection="column"
+          justifyContent="flex-start"
+          alignItems="flex-start"
+          maxWidth="700px"
+          mt={0}
+        >
+          <Heading letterSpacing="tight" mt={4} mb={4} fontSize="28px" fontWeight={100}>
+           Chapter 2......Fish
+          </Heading>
+          <Flex ml={4}>
+          <BlogPost {...introGuide} />
+          </Flex>
+          </Flex>
+
+
+
+
+          {/* <Heading isTruncated maxWidth="700px" letterSpacing="tight" mt={4} mb={4} size="xl" fontWeight={100}>
+           Chapter 2......Tests Mex, and a lot of ther flexy test to flex and test.
+          </Heading>
+          <Flex ml={4}>
+          <BlogPost {...introGuide} />
+          </Flex> */}
+
+
+
+
+
+
+
+
+
+          </Flex>
+
+          {/* <BlogPost {...stripeDesign} />
           <BlogPost {...monorepo} /> */}
-        </Flex>
+    
         {/* <Flex
           flexDirection="column"
           justifyContent="flex-start"

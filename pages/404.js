@@ -35,13 +35,10 @@ const Error = () => {
           maxWidth="700px"
         >
           <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
-            451 – Unavailable For Legal Reasons
+            404 – You've found a chapter I haven't written yet. 
           </Heading>
           <Text color={secondaryTextColor[colorMode]} my={4}>
-            Why show a generic 404 when I can make it sound mysterious? It seems
-            you've found something that used to exist, or you spelled something
-            wrong. I'm guessing you spelled something wrong. Can you double
-            check that URL?
+           My journal is constantly updating. You may have found a bad link!
           </Text>
           <NextLink href="/" passHref>
             <Button

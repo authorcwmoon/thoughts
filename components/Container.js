@@ -54,14 +54,21 @@ const Container = ({ children }) => {
         />
         <Box>
           <NextLink href="/" passHref>
-            <Button as="a" variant="ghost" color ="fafafa" p={[1, 4]}>
+            <Button size="s" as="a" variant="ghost" color ="fafafa" p={[1, 4]}>
               The Journal of C.W. Moon
             </Button>
           </NextLink>
           <NextLink href="/blog" passHref>
-            <Button as="a" variant="ghost" p={[1, 4]}>
-              Contents
-            </Button>
+              <IconButton
+              mr={10}
+              background="none"
+              aria-label="Search"
+              icon="search"
+              
+            />
+            {/* <Button as="a" size="s" variant="ghost" p={[1, 4]}>
+              Cont
+            </Button> */}
           {/* </NextLink>
           <NextLink href="/about" passHref>
             <Button as="a" variant="ghost" p={[1, 4]}>

@@ -77,8 +77,9 @@ const Blog = () => {
               Journal
             </Heading>
             <Text color={secondaryTextColor[colorMode]}>
-              {`This is the first online edition of my journal. I've added ${blogPosts.length} articles in the past two weeks. 
+              {`This is the first online edition of my journal. I've added ${blogPosts.length} articles in the past two weeks. M0re each week.
                 Use the search below to filter by title.`}
+
             </Text>
             <InputGroup my={4} mr={4} mb={0} w="100%">
               <Input

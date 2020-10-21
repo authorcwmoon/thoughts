@@ -105,7 +105,7 @@ const Index = () => {
           mt={0}
         >
           <Heading as="i" letterSpacing="tight" mt={4} mb={4} fontSize="25px" fontWeight={100}>
-          Chapter 8......Career advice and thought alternatives.
+          Chapter 8......Career advice and other ideas I'm unqualified to share. 
           </Heading> 
           <Flex ml={4}>
           <BlogPost {...gettingstartedGuide} />

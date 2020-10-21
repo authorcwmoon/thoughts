@@ -47,20 +47,20 @@ const Container = ({ children }) => {
         mx="auto"
       >
         <IconButton
-          mr={10}
+          mr={2}
           aria-label="Toggle dark mode"
           icon={colorMode === 'dark' ? 'sun' : 'moon'}
           onClick={toggleColorMode}
         />
         <Box>
           <NextLink href="/" passHref>
-            <Button size="s" as="a" variant="ghost" color ="fafafa" p={[1, 4]}>
+            <Button size="s" as="a" variant="ghost" color ="fafafa" p={[1, 2]}>
               The Journal of C.W. Moon
             </Button>
           </NextLink>
           <NextLink href="/blog" passHref>
               <IconButton
-              mr={10}
+              mr={2}
               background="none"
               aria-label="Search"
               icon="search"

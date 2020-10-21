@@ -54,7 +54,7 @@ const Index = () => {
           <Heading letterSpacing="tight" mb={0} size="xl" alignSelf="Center" textAlign="center" fontWeight={100}>
             Table of Contents
           </Heading>
-          <Heading letterSpacing="tight" mt={4} mb={4} minW={2} fontSize="25px" fontWeight={100}>
+          <Heading as="i" letterSpacing="tight" mt={4} mb={4} minW={2} fontSize="25px" fontWeight={100}>
            Chapter 1......Childhood and other things children are bad at. 
           </Heading>
           <Flex ml={4} minW={0}>
@@ -77,6 +77,25 @@ const Index = () => {
           <BlogPost {...introGuide} />
           </Flex>
           </Flex> */}
+       <Flex
+          flexDirection="column"
+          justifyContent="flex-start"
+          alignItems="flex-start"
+          maxWidth="700px"
+          mt={0}
+        >
+          <Heading as="i" letterSpacing="tight" mt={4} mb={4} fontSize="25px" fontWeight={100}>
+          Chapter 4......The Adventures of Captain Sprill.
+          </Heading>
+          <Text mb={4}>
+          Captain Sprill is a new captain with his first boat. He has no idea what he's doing and more than enough bad ideas to keep him busy.
+          </Text>
+          <Flex ml={4}>
+          <BlogPost {...introGuide} />
+          </Flex>
+          </Flex>
+
+
 
           <Flex
           flexDirection="column"
@@ -85,12 +104,9 @@ const Index = () => {
           maxWidth="700px"
           mt={0}
         >
-          <Heading letterSpacing="tight" mt={4} mb={4} fontSize="25px" fontWeight={100}>
+          <Heading as="i" letterSpacing="tight" mt={4} mb={4} fontSize="25px" fontWeight={100}>
           Chapter 8......Career advice and thought alternatives.
-          </Heading>
-          <Flex ml={4}>
-          <BlogPost {...introGuide} />
-          </Flex>
+          </Heading> 
           <Flex ml={4}>
           <BlogPost {...gettingstartedGuide} />
           </Flex>

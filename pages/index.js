@@ -7,7 +7,7 @@ import BlogPost from '../components/BlogPost';
 import Subscribe from '../components/Subscribe';
 // import ProjectCard from '../components/ProjectCard';
 
-import { frontMatter as introGuide } from './blog/introductions-and-other-important-baseline-information.mdx';
+import { frontMatter as introGuide } from './blog/part-1-the-adventures-of-captain-sprill.mdx';
 import { frontMatter as gettingstartedGuide } from './blog/a-place-to-start.mdx';
 
 // import { frontMatter as stripeDesign } from './blog/how-stripe-designs-beautiful-websites.mdx';

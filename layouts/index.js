@@ -90,15 +90,6 @@ export default function BlogLayout({ children, frontMatter }) {
             {'Discuss on Twitter'}
           </Link>
         </Box>
-        <IframeResizer
-          checkOrigin={false}
-          title="Comments"
-          src={`https://fastfeedback.io/embed/BLspD6y8Bfn73LLm7nvW/${slug}?theme=${colorMode}`}
-          style={{
-            width: '1px',
-            minWidth: '100%'
-          }}
-        />
       </Stack>
     </Container>
   );

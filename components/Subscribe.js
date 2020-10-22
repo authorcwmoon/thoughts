@@ -75,6 +75,7 @@ const Subscribe = () => {
       padding={6}
       my={4}
       mw="500px"
+      alignSelf="center"
     >
       <Heading as="h5" size="lg" mb={2}>
         Read my journal.

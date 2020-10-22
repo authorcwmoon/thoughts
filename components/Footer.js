@@ -2,11 +2,9 @@ import React from 'react';
 import NextLink from 'next/link';
 import { Flex, Link, IconButton } from '@chakra-ui/core';
 
-import Subscribe from './Subscribe';
 
 const Footer = () => (
   <Flex align="center" mb={4} direction="column">
-    <Subscribe />
     <div>
       {/* <Link href="https://twitter.com/leeerob" title="Twitter" isExternal>
         <IconButton
@@ -52,7 +50,7 @@ const Footer = () => (
           variant="ghost"
         />
       </Link> */}
-      <Link href="mailto:me@leerob.io" title="Email" isExternal>
+      <Link href="mailto:author@cwmoon.com" title="Email" isExternal>
         <IconButton
           aria-label="Email"
           icon="mail"

@@ -15,6 +15,7 @@ import {
 
 import Container from '../components/Container';
 import BlogPost from '../components/BlogPost';
+import Subscribe from '../components/Subscribe';
 
 // eslint-disable-next-line import/no-unresolved, import/extensions;
 import { frontMatter as blogPosts } from './blog/**/*.mdx';
@@ -112,6 +113,7 @@ const Blog = () => {
             ))}
           </Flex>
         </Stack>
+        <Subscribe /> 
       </Container>
     </>
   );

@@ -164,7 +164,7 @@ const Index = () => {
           />
         </Flex> */}
         {/* <Timeline /> */}
-        {/* <Subscribe /> */}
+      <Subscribe /> 
       </Stack>
     </Container>
   );

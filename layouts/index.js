@@ -85,7 +85,7 @@ export default function BlogLayout({ children, frontMatter }) {
         </Flex>
         {children}
         <Subscribe />
-        <Box>
+        <Box alignSelf='center'>
           <Link href={discussUrl(slug)} isExternal>
             {'Discuss on Twitter'}
           </Link>

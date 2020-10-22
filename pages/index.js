@@ -55,7 +55,7 @@ const Index = () => {
             Table of Contents
           </Heading>
           <Heading as="i" letterSpacing="tight" mt={4} mb={4} minW={2} fontSize="25px" fontWeight={100}>
-           Chapter 1......Childhood and other things children are bad at. 
+           Collection 1......Childhood and other things children are bad at. 
           </Heading>
           <Flex ml={4} minW={0}>
           {'More articles to come...'}
@@ -85,7 +85,7 @@ const Index = () => {
           mt={0}
         >
           <Heading as="i" letterSpacing="tight" mt={4} mb={4} fontSize="25px" fontWeight={100}>
-          Chapter 4......The Adventures of Captain Sprill.
+          Collection 2......The Adventures of Captain Sprill.
           </Heading>
           <Text mb={4}>
           Captain Sprill is a new captain with his first boat. He has no idea what he's doing and more than enough bad ideas to keep him busy.
@@ -105,7 +105,7 @@ const Index = () => {
           mt={0}
         >
           <Heading as="i" letterSpacing="tight" mt={4} mb={4} fontSize="25px" fontWeight={100}>
-          Chapter 8......Career advice and other ideas I'm unqualified to share. 
+          Collection 3.....Positive Coaching
           </Heading> 
           <Flex ml={4}>
           <BlogPost {...gettingstartedGuide} />

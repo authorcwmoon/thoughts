@@ -55,7 +55,8 @@ const BlogPost = (frontMatter) => {
           <Text as="i" color="gray.500">{frontMatter.by} {'C.W. Moon '} </Text>
           <Text as="i" mt={2} mb={2} color="gray.500">—{frontMatter.readingTime.text}</Text>
           </Flex>
-          <Text color={secondaryTextColor[colorMode]}>{summary}</Text>
+          <Text mb={2} color={secondaryTextColor[colorMode]}>{summary}</Text>
+          <Text as="i" mt={8} color="gray.500">Continue reading...</Text>
         </Box>
       </Link>
     </NextLink>

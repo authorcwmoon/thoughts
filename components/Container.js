@@ -60,7 +60,7 @@ const Container = ({ children }) => {
           </NextLink>
           <NextLink href="/blog" passHref>
               <IconButton
-              mr={2}
+              mr={0}
               background="none"
               aria-label="Search"
               icon="search"

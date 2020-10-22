@@ -62,6 +62,19 @@ const Footer = () => (
         />
       </Link>
     </div>
+    <div>
+      <NextLink href="/blog" passHref>
+        <Link
+          fontSize="sm"
+          color="gray.500"
+          minWidth="100px"
+          mr={2}
+          title="Copyright"
+        >
+          ©2020 C.W. Moon All Rights Reserved
+        </Link>
+      </NextLink>
+      </div>
     {/* <div>
       <NextLink href="/uses" passHref>
         <Link

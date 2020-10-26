@@ -90,7 +90,7 @@ const Index = () => {
           <Text mb={4}>
           Captain Sprill is a new captain with his first boat. He has no idea what he's doing and more than enough bad ideas to keep him busy.
           </Text>
-          <Flex ml={4}>
+          <Flex >
           <BlogPost {...introGuide} />
           </Flex>
           </Flex>
@@ -107,7 +107,7 @@ const Index = () => {
           <Heading as="i" letterSpacing="tight" mt={4} mb={4} fontSize="25px" fontWeight={100}>
           Collection 3.....Positive Coaching
           </Heading> 
-          <Flex ml={4}>
+          <Flex roundedBottomRight borderBottomRightRadius={8}>
           <BlogPost {...gettingstartedGuide} />
           </Flex>
           </Flex> 

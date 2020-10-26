@@ -41,6 +41,7 @@
     "isomorphic-fetch": "^3.0.0",
     "mdx-prism": "0.3.1",
     "netlify-cli": "^2.65.5",
+    "netlify-cms-app": "^2.13.1",
     "next": "9.5.3",
     "next-google-fonts": "1.2.1",
     "next-mdx-enhanced": "4.0.0",

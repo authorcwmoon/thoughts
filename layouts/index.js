@@ -35,7 +35,7 @@ export default function BlogLayout({ children, frontMatter }) {
 
   return (
     <Container>
-      <BlogSeo url={`https://cwmoon.com/journal/${slug}`} {...frontMatter} />
+      <BlogSeo url={`https://cwmoon.com/blog/${slug}`} {...frontMatter} />
       <Stack
         as="article"
         spacing={8}
@@ -80,6 +80,12 @@ export default function BlogLayout({ children, frontMatter }) {
               {frontMatter.readingTime.text}
               {` • `}
               {/* <ViewCounter id={slug} /> */}
+            </Text>
+          </Flex>
+          <Flex>
+            <Text fontSize="sm" color="gray.500" minWidth="100px" mt={[2, 0]}>
+              {frontMatter.tags}
+              {` `}
             </Text>
           </Flex>
         </Flex>

@@ -2,6 +2,7 @@ import React from 'react';
 import { theme as chakraTheme } from '@chakra-ui/core';
 
 
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 
 const theme = {

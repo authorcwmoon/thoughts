@@ -13,6 +13,8 @@ import { frontMatter as gettingstartedGuide } from './blog/a-place-to-start.mdx'
 // import { frontMatter as stripeDesign } from './blog/how-stripe-designs-beautiful-websites.mdx';
 // import { frontMatter as monorepo } from './blog/monorepo-lerna-yarn-workspaces.mdx';
 
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 const Index = () => {
   const { colorMode } = useColorMode();
   const secondaryTextColor = {

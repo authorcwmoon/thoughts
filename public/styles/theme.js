@@ -9,17 +9,18 @@ const theme = {
   ...chakraTheme,
   fonts: {
     body: "Libre Baskerville, serif",
-    Heading: "Libre Baskerville, serif",
+    heading: "Libre Baskerville, serif",
     mono: "Libre Baskerville, serif",
     text: "Libre Baskerville, serif",
     main: 'Libre Baskerville, serif',
 
   },
-  fontWeights: {
-    normal: 600,
-    medium: 700,
-    bold: 700,
-  },
+//   fontWeights: {
+//     ...chakraTheme.fontWeights,
+//     normal: 600,
+//     medium: 700,
+//     bold: 700,
+//   },
   icons: {
     ...chakraTheme.icons,
     twitter: {

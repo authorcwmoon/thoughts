@@ -2,7 +2,7 @@
 
 
 import React, { useEffect } from 'react';
-// import { MDXProvider } from '@mdx-js/react';
+import { MDXProvider } from '@mdx-js/react';
 import { Global, css } from '@emotion/core';
 // import { DefaultSeo } from 'next-seo';
 import {
@@ -19,11 +19,11 @@ import theme from '../../public/styles/theme';
 import { prismLightTheme, prismDarkTheme } from '../../public/styles/prism';
 
 import "../../public/styles/global.css";
-// import MDXComponents from '../components/MDXComponents';
+import MDXComponents from '../../src/components/MDXComponents';
 // import SEO from '../next-seo.config';
 
 
-const GlobalStyle = ({ children }) => {
+const GlobalStyle = ({ children}) => {
   const { colorMode } = useColorMode();
 
   return (
@@ -49,6 +49,7 @@ const GlobalStyle = ({ children }) => {
         `}
       />
       {children}
+
     </>
   );
 };
@@ -58,17 +59,17 @@ const GlobalStyle = ({ children }) => {
 // });
 
 const App = ({ Component, pageProps }) => {
-  useEffect(() => {
-    if (process.env.NODE_ENV === 'production') {
-      Fathom.load(process.env.NEXT_PUBLIC_FATHOM_SITE_ID, {
-        includedDomains: ['leerob.io']
-      });
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (process.env.NODE_ENV === 'production') {
+  //     Fathom.load(process.env.NEXT_PUBLIC_FATHOM_SITE_ID, {
+  //       includedDomains: ['leerob.io']
+  //     });
+  //   }
+
 
   return (
     <ThemeProvider theme={theme}>
-      {/* <MDXProvider components={MDXComponents}> */}
+      <MDXProvider components={MDXComponents}>
         <ColorModeProvider value="light">
           <GlobalStyle>
             <Head>
@@ -93,7 +94,7 @@ const App = ({ Component, pageProps }) => {
             <Component {...pageProps} />
           </GlobalStyle>
         </ColorModeProvider>
-      {/* </MDXProvider> */}
+      </MDXProvider>
     </ThemeProvider>
   );
 };

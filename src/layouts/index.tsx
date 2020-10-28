@@ -77,7 +77,16 @@ export default function Index({
           description={description}
         />
        
-        <div className={"container"}>
+
+        <Stack
+        as="article"
+        spacing={8}
+        justifyContent="center"
+        alignItems="flex-start"
+        m="0 auto 4rem auto"
+        maxWidth="700px"
+        w="100%"
+      >
         <Flex
           flexDirection="column"
           justifyContent="flex-start"
@@ -110,20 +119,9 @@ export default function Index({
               </Text>
             </Flex>
             </Flex>
-        <Flex>
-            <Text fontSize="sm" color="gray.500" minWidth="100px" mt={[2, 0]}>
-              {` `}
-              {content}
-            </Text>
-          </Flex>
-          </Flex>
-
+            </Flex>
+            {content}
           <article>
-            <header>
-              <div className={"metadata"}>
-              </div>
-            </header>
-            <div className={styles.content}>{content}</div>
             <ul className={"tag-list"}>
               {tags.map((it, i) => (
                 <li key={i}>
@@ -132,13 +130,13 @@ export default function Index({
               ))}
             </ul>
           </article>
+          </Stack>
           <footer>
             <div className={"social-list"}>
               <SocialList />
             </div>
             <Copyright />
           </footer>
-        </div>
         <style jsx>
           {`
             .container {

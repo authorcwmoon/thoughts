@@ -2,7 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
-  "/": "pages/index.js",
-  "/posts/welcome": "pages/posts/welcome.js"
+  "/posts": "pages/posts.js",
+  "/posts/markdown-syntax": "pages/posts/markdown-syntax.js",
+  "/posts/page/[page]": "pages/posts/page/[page].js",
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
 }

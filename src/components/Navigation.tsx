@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import NextLink from 'next/link';
 import { useColorMode, Button, Flex, Box, IconButton } from '@chakra-ui/core';
 import styled from '@emotion/styled';
@@ -12,7 +12,8 @@ const StickyNav = styled(Flex)`
   transition: background-color 0.1 ease-in-out;
 `;
 
-const Navigation = ({ children }) => {
+interface Props {children?: ReactNode}
+const Navigation = ({ children } : Props) => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   const bgColor = {
@@ -52,7 +53,7 @@ const Navigation = ({ children }) => {
           onClick={toggleColorMode}
         />
         <Box>
-          <NextLink href="/" passHref>
+          <NextLink href="/posts" passHref>
             <Button size="sm" as="a" variant="ghost" color ="fafafa" p={[1, 2]}>
               The Journal of C.W. Moon
             </Button>

@@ -1,5 +1,5 @@
 {
-  "base_url": "https://wutali-nextjs-netlify-blog.netlify.app",
+  "base_url": "https://cwmoon-nextjs-netlify-blog.netlify.app",
   "site_title": "The Journal of C.W. Moon",
   "site_description": "Small thoughts, big stories",
   "site_keywords": [
@@ -15,5 +15,5 @@
   ],
   "posts_per_page": 5,
   "twitter_account": "@willc44",
-  "github_account": "wutali"
+  "github_account": "cwmoon"
 }

@@ -3,7 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/posts": "pages/posts.js",
-  "/posts/markdown-syntax": "pages/posts/markdown-syntax.js",
-  "/posts/page/[page]": "pages/posts/page/[page].js",
+  "/": "pages/index.js",
   "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
 }

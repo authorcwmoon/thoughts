@@ -9,6 +9,7 @@ import JsonLdMeta from "../components/meta/JsonLdMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
+import Subscribe from "../components/Subscribe";
 import TagButton from "../components/TagButton";
 import { getAuthor } from "../lib/authors";
 import { getTag } from "../lib/tags";
@@ -130,6 +131,8 @@ export default function Index({
               ))}
             </ul>
           </article>
+          <Subscribe/>
+
           </Stack>
           <footer>
             <div className={"social-list"}>

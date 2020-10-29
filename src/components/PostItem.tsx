@@ -1,7 +1,7 @@
 import { PostContent } from "../lib/posts";
 import Date from "./Date";
 import NextLink from 'next/link';
-import { parseISO } from "date-fns";
+import { parseISO, format } from 'date-fns';
 import { useColorMode, Heading, Text, Flex, Box, Link } from '@chakra-ui/core';
 
 
@@ -41,12 +41,13 @@ export default function PostItem({ post }: Props) {
            flexDirection={['column', 'row']}
          >
           <Text as="i" color="gray.500">  
-            {post.date} </Text>
+          <Date  date={parseISO(post.date)} /> </Text>
+          {" - "}
             <Text as="i" color="gray.500">  
             {post.author} </Text>
           {/* <Text as="i" mt={2} mb={2} color="gray.500">—{frontMatter.readingTime.text}</Text> */}
           </Flex>
-          <Text mb={2} >{post.summary}</Text>
+          <Text mt={2} mb={2} >{post.summary}</Text>
           <Text as="i" mt={8} color="gray.500">Continue reading...</Text>
         </Box>
     </NextLink>

@@ -14,11 +14,6 @@
     "static/development/_ssgManifest.js"
   ],
   "pages": {
-    "/": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/index.js"
-    ],
     "/_app": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
@@ -29,10 +24,20 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
+    "/posts": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/posts.js"
+    ],
     "/posts/tags/[[...slug]]": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/posts/tags/[[...slug]].js"
+    ],
+    "/posts/the-adventures-of-captain-sprill-part-two": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/posts/the-adventures-of-captain-sprill-part-two.js"
     ]
   },
   "ampFirstPages": []

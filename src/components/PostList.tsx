@@ -26,6 +26,9 @@ export default function PostList({ posts, tags, pagination }: Props) {
         m="0 auto 4rem auto"
         maxWidth="700px"
       >
+        <Heading>
+        All posts /
+        </Heading>
         <Flex>
         <ul className={"post-list"}>
           {posts.map((it, i) => (

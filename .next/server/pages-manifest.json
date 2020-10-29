@@ -2,6 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/posts/a-place-to-start": "pages/posts/a-place-to-start.js",
-  "/posts": "pages/posts.js"
+  "/": "pages/index.js",
+  "/posts/the-adventures-of-captain-sprill-part-two": "pages/posts/the-adventures-of-captain-sprill-part-two.js",
+  "/posts/the-adventures-of-captain-sprill-part-one": "pages/posts/the-adventures-of-captain-sprill-part-one.js",
+  "/posts": "pages/posts.js",
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
 }

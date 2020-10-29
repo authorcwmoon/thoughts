@@ -40,11 +40,11 @@ export default function PostItem({ post }: Props) {
            justifyContent="flex"
            flexDirection={['column', 'row']}
          >
-          <Text as="i" color="gray.500">  
+          <Text as="i" mr={2} color="gray.500">  
           <Date  date={parseISO(post.date)} /> </Text>
           {" - "}
-            <Text as="i" color="gray.500">  
-            {post.author} </Text>
+            <Text ml={2} color="gray.500">  
+            {"C.W. Moon"} </Text>
           {/* <Text as="i" mt={2} mb={2} color="gray.500">—{frontMatter.readingTime.text}</Text> */}
           </Flex>
           <Text mt={2} mb={2} >{post.summary}</Text>

@@ -1,6 +1,4 @@
 authors:
-  - slug: cwmoon
-    name: Takahiro Fujiwara
-    introduction:
-      Co-founder and CTO at Fuller, Inc. / Software & Data Engineer /
-      Python / Golang / React
+  - name: C.W. Moon
+    slug: cwmoon
+    introduction: The owner of this journal.

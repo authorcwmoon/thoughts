@@ -1,16 +1,1 @@
-*.log
-.DS_Store
-.next
 node_modules
-.env.*
-public/sitemap.xml
-.mdx-data
-.vercel
-# Local Netlify folder
-.netlify
-
-# Distribution folder
-out/
-
-# cache folder
-.cache

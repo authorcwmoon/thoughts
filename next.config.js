@@ -1,35 +1,26 @@
-const readingTime = require('reading-time');
-const mdxPrism = require('mdx-prism');
-const withMdxEnhanced = require('next-mdx-enhanced');
-
+const withMdxEnhanced = require("next-mdx-enhanced");
+const rehypePrism = require("@mapbox/rehype-prism");
 
 module.exports = withMdxEnhanced({
-  layoutPath: 'layouts',
+  layoutPath: "src/layouts",
   defaultLayout: true,
-  target: 'serverless',
-  remarkPlugins: [
-    require('remark-autolink-headings'),
-    require('remark-slug'),
-    require('remark-code-titles'),
-    require('./utils/title-style')
-  ],
-  rehypePlugins: [mdxPrism],
-  extendFrontMatter: {
-    process: (mdxContent) => ({
-      wordCount: mdxContent.split(/\s+/gu).length,
-      readingTime: readingTime(mdxContent)
-    })
-  }
+  rehypePlugins: [rehypePrism],
 })({
-  webpack: (config, { isServer }) => {
-    if (isServer) {
-      require('./scripts/generate-sitemap');
-    }
-
+  pageExtensions: ["mdx", "tsx"],
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    config.module.rules.push(
+      ...[
+        {
+          test: /\.yml$/,
+          type: "json",
+          use: "yaml-loader",
+        },
+        {
+          test: /\.svg$/,
+          use: "@svgr/webpack",
+        },
+      ]
+    );
     return config;
-  }
-
-
-
-  
+  },
 });

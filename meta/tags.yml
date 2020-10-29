@@ -1,4 +1,8 @@
 tags:
+  - slug: test
+    name: test
+  - slug: Sprill
+    name: Sprill
   - slug: document
     name: document
   - slug: mock

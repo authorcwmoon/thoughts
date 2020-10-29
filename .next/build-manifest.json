@@ -29,25 +29,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/next/dist/pages/_error": [
+    "/posts/tags/[[...slug]]": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/next/dist/pages/_error.js"
-    ],
-    "/posts": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/posts.js"
-    ],
-    "/posts/the-adventures-of-captain-sprill-part-one": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/posts/the-adventures-of-captain-sprill-part-one.js"
-    ],
-    "/posts/the-adventures-of-captain-sprill-part-two": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/posts/the-adventures-of-captain-sprill-part-two.js"
+      "static/chunks/pages/posts/tags/[[...slug]].js"
     ]
   },
   "ampFirstPages": []

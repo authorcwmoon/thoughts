@@ -6,7 +6,7 @@ import Pagination from "./Pagination";
 import { TagContent } from "../lib/tags";
 import Layout from "./Layout";
 import { useColorMode, Heading, Text, Flex, Stack } from '@chakra-ui/core';
-
+import Subscribe from "./Subscribe";
 
 type Props = {
   posts: PostContent[];
@@ -55,6 +55,7 @@ export default function PostList({ posts, tags, pagination }: Props) {
         ))}
       </ul>
       </Flex>
+      <Subscribe />
     </Stack>
   );
 }

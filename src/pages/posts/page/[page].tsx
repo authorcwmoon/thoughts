@@ -32,7 +32,12 @@ export default function Page({ posts, tags, pagination, page }: Props) {
         m="0 auto 4rem auto"
         maxWidth="700px"
         >
-      <Flex>
+      <Flex
+      flexDirection="column"
+      justifyContent="flex-start"
+      alignItems="flex-start"
+      maxWidth="700px"
+      w="100%">
       <BasicMeta url={url} title={title} />
       <OpenGraphMeta url={url} title={title} />
       <TwitterCardMeta url={url} title={title} />

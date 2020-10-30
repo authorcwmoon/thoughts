@@ -14,7 +14,7 @@ export default function PostItem({ post }: Props) {
 
     <NextLink href={"/posts/" + post.slug} passHref>
 
-          <Box mb={8} display="block" width="100%">
+          <Box as="a" mb={8} display="block" width="100%">
           <Flex
             width="100%"
             align="flex-start"

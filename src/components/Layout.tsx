@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navigation from "./Navigation";
+import { Stack } from '@chakra-ui/core';
 
 type Props = {
   children: React.ReactNode;
@@ -15,7 +16,9 @@ export default function Layout({ children }: Props) {
         <meta name="theme-color" content="#fff" />
       </Head>
       <Navigation/>
+      <Stack padding={4}>
       <main>{children}</main>
+      </Stack>
         </div>
   );
 }

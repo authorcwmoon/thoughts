@@ -58,17 +58,17 @@ const Navigation = ({ children } : Props) => {
               The Journal of C.W. Moon
             </Button>
           </NextLink>
-          <NextLink href="/blog" passHref>
-              <IconButton
+          <NextLink href="/" passHref>
+              {/* <IconButton
               mr={0}
               background="none"
               aria-label="Search"
               icon="search"
               
-            />
-            {/* <Button as="a" size="s" variant="ghost" p={[1, 4]}>
-              Cont
-            </Button> */}
+            /> */}
+            <Button as="a" size="sm" variant="ghost" p={[1, 4]}>
+              About
+            </Button>
           {/* </NextLink>
           <NextLink href="/about" passHref>
             <Button as="a" variant="ghost" p={[1, 4]}>

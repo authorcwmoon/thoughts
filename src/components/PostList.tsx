@@ -29,6 +29,15 @@ export default function PostList({ posts, tags, pagination }: Props) {
         <Heading>
         All posts /
         </Heading>
+        <Flex 
+              alignSelf="center"
+              alignItems="flex-start"
+              mr={2}
+              pr={2}>
+              {tags.map((it, i) => (
+              <TagLink tag={it} /> 
+        ))}
+      </Flex>
         <Flex>
         <ul className={"post-list"}>
           {posts.map((it, i) => (
@@ -49,15 +58,7 @@ export default function PostList({ posts, tags, pagination }: Props) {
           }}
         />
         </Flex>
-        <Flex alignSelf="center">
-        <ul className={"categories"}>
-        {tags.map((it, i) => (
-          <li key={i}>
-            <TagLink tag={it} />
-          </li>
-        ))}
-      </ul>
-      </Flex>
+        
       <Subscribe />
     </Stack>
   );

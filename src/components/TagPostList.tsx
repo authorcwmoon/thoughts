@@ -40,7 +40,7 @@ export default function TagPostList({ posts, tag, pagination }: Props) {
         
         </Heading>
         <Heading  >
-         <span>{tag.name}</span>
+         <span><a>{tag.name}</a></span>
         </Heading>
         </Flex>
         </Box>

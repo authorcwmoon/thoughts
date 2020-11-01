@@ -62,7 +62,7 @@ export default function Index() {
           <Box alignSelf="center">
           <NextLink href="/posts" passHref>
             <Button   size="sm" as="a" variant="outline" color ="fafafa" mb={4}>
-              Read my journal ->
+              {'Read my journal ->'}
             </Button>
           </NextLink>
           </Box>
@@ -112,7 +112,7 @@ export default function Index() {
            <Box alignSelf="center">
           <NextLink href="/posts" passHref>
             <Button   size="sm" as="a" variant="outline" color ="fafafa" m={4}>
-              View All Posts ->
+             {'View All Posts ->'}
             </Button>
           </NextLink>
           </Box>

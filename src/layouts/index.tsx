@@ -2,7 +2,6 @@ import Head from "next/head";
 import React from "react";
 import styles from "../../public/styles/content.module.css";
 import Author from "../components/Author";
-import Copyright from "../components/Copyright";
 import Layout from "../components/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
 import JsonLdMeta from "../components/meta/JsonLdMeta";
@@ -138,7 +137,6 @@ export default function Index({
             <div className={"social-list"}>
               <SocialList />
             </div>
-            <Copyright />
           </footer>
         <style jsx>
           {`

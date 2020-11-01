@@ -79,8 +79,9 @@ const Subscribe = () => {
         Read my journal.
       </Heading>
       <Text>
-        Susbscribe for breakfast emails that taste best with coffee.
+        Susbscribe for regular updates on my character's adventures
       </Text>
+      across space and time. 
       <InputGroup size="md" mt={4}>
         <Input
           aria-label="Email for newsletter"

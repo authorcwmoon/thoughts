@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import NextLink from 'next/link';
 import { useColorMode, Button, Flex, Box, IconButton } from '@chakra-ui/core';
 import styled from '@emotion/styled';
-
+import Link from '../components/Link'
 
 const StickyNav = styled(Flex)`
   position: sticky;
@@ -54,10 +54,13 @@ const Navigation = ({ children } : Props) => {
         />
         <Box>
           <NextLink href="/posts" passHref>
-            <Button size="sm" as="a" variant="ghost" color ="fafafa" p={[1, 2]}>
+            <Button   size="sm" as="a" variant="ghost" color ="fafafa" p={[1, 2]}>
               The Journal of C.W. Moon
             </Button>
           </NextLink>
+          {" |"}
+
+          
           <NextLink href="/" passHref>
               {/* <IconButton
               mr={0}
@@ -66,7 +69,7 @@ const Navigation = ({ children } : Props) => {
               icon="search"
               
             /> */}
-            <Button as="a" size="sm" variant="ghost" p={[1, 4]}>
+            <Button as="a" size="sm" variant="ghost" ml={2} p={[1, 4]}>
               About
             </Button>
           {/* </NextLink>

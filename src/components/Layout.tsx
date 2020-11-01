@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Navigation from "./Navigation";
 import { Stack } from '@chakra-ui/core';
+import Copyright from "./Copyright";
+
 
 type Props = {
   children: React.ReactNode;
@@ -18,6 +20,7 @@ export default function Layout({ children }: Props) {
       <Navigation/>
       <Stack padding={4}>
       <main>{children}</main>
+      <Copyright/>
       </Stack>
         </div>
   );

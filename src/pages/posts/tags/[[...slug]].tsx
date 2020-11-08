@@ -39,11 +39,13 @@ export default function Index({ posts, tag, pagination, page }: Props) {
       alignItems="flex-start"
       maxWidth="700px"
       w="100%">
+        
       <BasicMeta url={url} title={title} />
       <OpenGraphMeta url={url} title={title} />
       <TwitterCardMeta url={url} title={title} />
       <TagPostList posts={posts} tag={tag} pagination={pagination} />
       </Flex>
+
       </Stack>
     </Layout>
   );

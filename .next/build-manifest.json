@@ -14,11 +14,6 @@
     "static/development/_ssgManifest.js"
   ],
   "pages": {
-    "/": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/index.js"
-    ],
     "/_app": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
@@ -34,10 +29,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/posts.js"
     ],
-    "/posts/tags/[[...slug]]": [
+    "/posts/a-place-to-start": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/posts/tags/[[...slug]].js"
+      "static/chunks/pages/posts/a-place-to-start.js"
     ]
   },
   "ampFirstPages": []

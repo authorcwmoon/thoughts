@@ -11,9 +11,16 @@ import PostItem from "../components/PostItem";
 import TagLink from "../components/TagLink";
 import Pagination from "../components/Pagination";
 import { TagContent } from "../lib/tags";
-import { useColorMode, Box, Button, Heading, Text, Flex, Stack, Link } from '@chakra-ui/core';
+import { useColorMode, Progress, Avatar, Box, Button, Heading, Text, Flex, Stack, Link } from '@chakra-ui/core';
 import PostList from "../components/PostList";
-
+import {
+  SimpleGrid,
+  Slider,
+  SliderTrack,
+  SliderFilledTrack,
+  SliderThumb,
+} from "@chakra-ui/core";
+import { MdLibraryBooks, MdAssignment} from "react-icons/md";
 
 type Props = {
   posts: PostContent[];
@@ -46,12 +53,28 @@ export default function Index() {
           alignItems="flex-start"
           maxWidth="700px"
         >
+           
           <Heading letterSpacing="tight" mb={2} as="h2" size="xl" fontWeight={200}>
             Bio
           </Heading>
+          <Flex
+          flexDirection="row"
+          justifyContent="flex-start"
+          alignItems="flex-start"
+          maxWidth="700px"
+        >
+        
           <Text>
-          I'm C.W. Moon. I've been writing for the past fourteen years and have recently started to publish my work online. Professionally, I'm attaining my Masters in Positive Coaching while Cofounder of OpenLoop, a Techstars Portfolio company.  
+          I'm C.W. Moon. I've been writing for the past fourteen years and have recently started to publish my work online. Professionally, I'm Cofounder of OpenLoop, a Techstars Portfolio company. In my spare time I'm currently studying for my Master's degree in positive coaching. 
+      
            </Text>
+           <Avatar
+                size="xl"
+                name="C.W. Moon"
+                src="https://bit.ly/34WFAj1"
+                mr={2}
+              />
+           </Flex>
          </Flex>
          <Flex
           flexDirection="column"
@@ -73,14 +96,121 @@ export default function Index() {
           </Heading>
           <Text>
           If you've burnt yourself out on self-help gurus and life advice podcasts this is a place for you. I boil down notes from extraordinary people and turn them into fiction.  My characters learn the things I wish I knew, in the magical ways I wish I could.  
-           <Text mt={2}>
-           This journal is a collection of short stories on my path to publish my debut novel,
-           <Text as="i" ml={1}>
-           Portugal Wicker and the Fireplaces That Smoke Underwater.
-           </Text>
-           </Text>
            
            </Text>
+           </Flex>
+
+
+           <Flex
+          flexDirection="column"
+          justifyContent="flex-start"
+          alignItems="flex-start"
+          maxWidth="700px"
+        >
+           <Heading letterSpacing="tight" mb={2} as="h2" size="xl" fontWeight={200}>
+            What I Write
+          </Heading>
+          <Text>
+           This journal hosts interviews, short stories, and other interesting content at the intersection of storytelling and entrepreneurship. 
+          </Text>
+          <Text mt={2}>
+           Other works include regular health-tech articles on the OpenLoop website and my 2021 debut novel,
+           <Link as="i" ml={1}>
+                Portugal Wicker and the Fireplaces That Smoke Underwater.
+                </Link>
+           <Flex
+          flexDirection="column"
+          justifyContent="flex-start"
+          alignItems="flex-start"
+          maxWidth="700px"
+        >
+
+           <Heading letterSpacing="tight" mt={4} mb={2} as="h2" size="xl" fontWeight={200}>
+            Works in Progress
+          </Heading>
+         
+          
+            <SimpleGrid mt={4} columns={1} minChildWidth="700px" spacingY="20px">
+              <Box height="80px">
+                <Flex
+                  flexDirection="row"
+                  justifyContent="space-between"
+                  alignItems="space-between"
+                  maxWidth="700px"
+                >
+                <Link as="i" ml={1}>
+                Novel - Portugal Wicker and the Fireplaces That Smoke Underwater
+                </Link>
+                <Text as="i" mr={4}>
+                47%
+                </Text>
+                </Flex>
+                  <Slider mt={2} value={47}>
+                  <SliderTrack bg="gray.300" />
+                  <SliderFilledTrack bg="gray.900" />
+                  <SliderThumb size={6}>
+                  <Box color="gray.900" as={MdLibraryBooks} />
+                  </SliderThumb>
+                  </Slider>      
+                  </Box>
+
+
+                  <Box height="80px">
+
+                  <Flex
+                  flexDirection="row"
+                  justifyContent="space-between"
+                  alignItems="space-between"
+                  maxWidth="700px"
+                >
+                <Text as="i" ml={1}>
+                Journal Article - The Adventures of Captain Sprill Part Four
+                </Text>
+                <Text as="i" mr={4}>
+                97%
+                </Text>
+                </Flex>
+                  <Slider mt={2} value={97}>
+                  <SliderTrack bg="gray.300" />
+                  <SliderFilledTrack bg="gray.900" />
+                  <SliderThumb size={6}>
+                  <Box color="gray.900" as={MdAssignment} />
+                  </SliderThumb>
+                  </Slider>      
+
+                  </Box>
+            <Box height="80px">
+
+
+            <Flex
+                  flexDirection="row"
+                  justifyContent="space-between"
+                  alignItems="space-between"
+                  maxWidth="700px"
+                >
+                <Text as="i" ml={1}>
+                Interview Article - Dynamic Duo Series 
+                </Text>
+                <Text as="i" mr={4}>
+                23%
+                </Text>
+                </Flex>
+                  <Slider mt={2} value={23}>
+                  <SliderTrack bg="gray.300" />
+                  <SliderFilledTrack bg="gray.900" />
+                  <SliderThumb size={6}>
+                  <Box color="gray.900" as={MdAssignment} />
+                  </SliderThumb>
+                  </Slider>      
+
+            </Box>
+
+          </SimpleGrid>
+               
+        </Flex>
+        </Text>
+    
+
          </Flex>
          <Flex
           flexDirection="column"

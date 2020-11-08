@@ -12,6 +12,7 @@ export type PostContent = {
   readonly title: string;
   readonly slug: string;
   readonly tags?: string[];
+  readonly readtime: string;
 };
 
 let postCache: PostContent[];
@@ -42,6 +43,7 @@ function fetchPostContent(): PostContent[] {
         summary: string;
         tags: string[];
         slug: string;
+        readtime: string;
       };
       const slug = fileName.replace(/\.mdx$/, "");
 

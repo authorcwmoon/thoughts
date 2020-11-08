@@ -12,6 +12,8 @@ import Subscribe from "../components/Subscribe";
 import TagButton from "../components/TagButton";
 import { getAuthor } from "../lib/authors";
 import { getTag } from "../lib/tags";
+import Date from "../components/Date";
+import ViewCounter from '../components/ViewCounter';
 import {
   useColorMode,
   Heading,
@@ -23,7 +25,7 @@ import {
   Box
 } from '@chakra-ui/core';
 import IframeResizer from 'iframe-resizer-react';
-import { parseISO, format } from 'date-fns';
+import { parseISO, formatISO } from 'date-fns';
 
 
 
@@ -36,6 +38,7 @@ type Props = {
   description: string;
   tags: string[];
   author: string;
+  readtime: string;
 };
 export default function Index({
   title,
@@ -44,6 +47,7 @@ export default function Index({
   author,
   tags,
   description,
+  readtime,
 }: Props) {
   const keywords = tags.map((it) => getTag(it).name);
   const authorName = getAuthor(author).name;
@@ -115,8 +119,14 @@ export default function Index({
                <Text fontSize="sm" color="fafafa">
                <Author author={getAuthor(author)} />
                {` / `}
-               {format(new Date(), 'MMMM dd, yyyy')}
-              </Text>
+               <Date  date={date} />
+               {` / `} 
+               {readtime}
+               {` min read `} 
+                </Text>
+                {/* <ViewCounter id={slug} /> */}
+
+            
             </Flex>
             </Flex>
             </Flex>

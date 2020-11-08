@@ -13,7 +13,7 @@ import TagButton from "../components/TagButton";
 import { getAuthor } from "../lib/authors";
 import { getTag } from "../lib/tags";
 import Date from "../components/Date";
-import ViewCounter from '../components/ViewCounter';
+// import ViewCounter from '../components/ViewCounter';
 import {
   useColorMode,
   Heading,

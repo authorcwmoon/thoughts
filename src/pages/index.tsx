@@ -115,9 +115,10 @@ export default function Index() {
           </Text>
           <Text mt={2}>
            Other works include regular health-tech articles on the OpenLoop website and my 2021 debut novel,
-           <Link as="i" ml={1}>
+          <Link as="i" ml={1}>
                 Portugal Wicker and the Fireplaces That Smoke Underwater.
-                </Link>
+          </Link>
+          </Text>
            <Flex
           flexDirection="column"
           justifyContent="flex-start"
@@ -128,9 +129,12 @@ export default function Index() {
            <Heading letterSpacing="tight" mt={4} mb={2} as="h2" size="xl" fontWeight={200}>
             Works in Progress
           </Heading>
+          <Text mt={2}>
+          I post at least once on this site every week. If you have an idea for a story, interview guest, or any other cool topics, I can be reached at 
+          <Link fontStyle="italics" rel="stylesheet" href="mailto:author@cwmoon.com" isExternal> author@cwmoon.com</Link>
          
           
-            <SimpleGrid mt={4} columns={1} minChildWidth="700px" spacingY="20px">
+            <SimpleGrid mt={4} columns={1} gridGap={0} >
               <Box height="80px">
                 <Flex
                   flexDirection="row"
@@ -206,9 +210,8 @@ export default function Index() {
             </Box>
 
           </SimpleGrid>
-               
+          </Text>
         </Flex>
-        </Text>
     
 
          </Flex>

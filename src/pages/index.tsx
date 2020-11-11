@@ -96,8 +96,11 @@ export default function Index() {
           </Heading>
           <Text>
           If you've burnt yourself out on self-help gurus and life advice podcasts this is a place for you. I boil down notes from extraordinary people and turn them into fiction.  My characters learn the things I wish I knew, in the magical ways I wish I could.  
-           
            </Text>
+           <Text mt={2} as="b">
+
+           </Text>
+           
            </Flex>
 
 
@@ -134,7 +137,7 @@ export default function Index() {
           <Link fontStyle="italics" rel="stylesheet" href="mailto:author@cwmoon.com" isExternal> author@cwmoon.com</Link>
          
           
-            <SimpleGrid mt={4} columns={1} gridGap={0} >
+            <SimpleGrid mt={4} columns={1} spacingY="20px" >
               <Box height="80px">
                 <Flex
                   flexDirection="row"
@@ -166,6 +169,7 @@ export default function Index() {
                   justifyContent="space-between"
                   alignItems="space-between"
                   maxWidth="700px"
+
                 >
                 <Text as="i" ml={1}>
                 Journal Article - The Adventures of Captain Sprill Part Four

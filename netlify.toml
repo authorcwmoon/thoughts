@@ -1,3 +1,7 @@
 [build]
   publish = "dist"
   command = "npm run export"
+  functions = "functions"
+
+[dev]
+  functions = "functions"

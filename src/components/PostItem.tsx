@@ -3,6 +3,7 @@ import Date from "./Date";
 import NextLink from 'next/link';
 import { parseISO, format } from 'date-fns';
 import { useColorMode, Heading, Text, Flex, Box, Link } from '@chakra-ui/core';
+import ViewCounter from './ViewCounter';
 
 
 
@@ -47,7 +48,8 @@ export default function PostItem({ post }: Props) {
             {"Author C.W. Moon"} </Text>
             <Text ml={2} color="gray.500">  
             {" - "}{post.readtime}{" min read"}</Text>
-          {/* <Text as="i" mt={2} mb={2} color="gray.500">—{frontMatter.readingTime.text}</Text> */}
+            {/* <ViewCounter id={post.slug} /> */}
+         {/* <Text as="i" mt={2} mb={2} color="gray.500">—{frontMatter.readingTime.text}</Text> */}
           </Flex>
           <Text mt={2} mb={2} >{post.summary}</Text>
           <Text as="i" mt={8} color="gray.500">Continue reading...</Text>

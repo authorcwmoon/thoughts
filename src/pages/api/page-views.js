@@ -1,24 +1,20 @@
-// import db from '../../lib/db-admin';
+import db from "../../lib/db-admin";
 
-// export default (req, res) => {
-//   if (!req.query.id) {
-//     return db.ref('views').once('value', (snapshot) => {
-//       const views = snapshot.val();
-//       const allViews = Object.values(views).reduce(
-//         (total, value) => total + value
-//       );
+export default async function view(req, res) {
+  if (!req.query.id) {
+    return res.status(400).json({
+      error: 'Missing "id" query parameter',
+    });
+  }
 
-//       return res.status(200).json({
-//         total: allViews
-//       });
-//     });
-//   }
+  const ref = db().ref("views").child(req.query.id);
+  const { snapshot } = await ref.transaction(currentViews => {
+    // if it has never been set it returns null
+    if (currentViews === null) currentViews = 0;
+    return currentViews + 1;
+  });
 
-//   const ref = db.ref('views').child(req.query.id);
-
-//   return ref.once('value', (snapshot) => {
-//     res.status(200).json({
-//       total: snapshot.val()
-//     });
-//   });
-// };
+  res.status(200).json({
+    total: snapshot.val(),
+  });
+}

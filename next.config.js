@@ -6,6 +6,7 @@ module.exports = withMdxEnhanced({
   layoutPath: "src/layouts",
   defaultLayout: true,
   rehypePlugins: [rehypePrism],
+  externals: [ 'aws-sdk', 'commonjs2 firebase-admin' ],
   extendFrontMatter: {
     process: (mdxContent) => ({
       wordCount: mdxContent.split(/\s+/gu).length,
@@ -14,9 +15,10 @@ module.exports = withMdxEnhanced({
   }
 })({
   pageExtensions: ["mdx", "tsx"],
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.module.rules.push(
       ...[
+      
         {
           test: /\.yml$/,
           type: "json",
@@ -26,8 +28,25 @@ module.exports = withMdxEnhanced({
           test: /\.svg$/,
           use: "@svgr/webpack",
         },
+        
+    
+        
+        
       ]
+      
     );
+
+
+
+
+    
     return config;
+
+
+
+
+
+    
   },
 });
+

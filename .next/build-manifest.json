@@ -1,33 +1,151 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills.js"
+    "static/chunks/polyfills-e69e3f359d870aace677.js"
   ],
-  "devFiles": [
-    "static/chunks/react-refresh.js"
-  ],
-  "ampDevFiles": [
-    "static/chunks/webpack.js",
-    "static/chunks/amp.js"
-  ],
+  "devFiles": [],
+  "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/ZSh0Cvqg7pDKVSj_rtoU6/_buildManifest.js",
+    "static/ZSh0Cvqg7pDKVSj_rtoU6/_ssgManifest.js"
   ],
   "pages": {
     "/": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/index.js"
+      "static/chunks/main-9916ff5cfa7f288580a4.js",
+      "static/chunks/webpack-caf1ff17dad824a6f46b.js",
+      "static/chunks/framework.d3c9d973ca0cf43312e7.js",
+      "static/chunks/252f366e.f4dff0f7b0adc61b6db5.js",
+      "static/chunks/commons.791bd1b020fd52da39ef.js",
+      "static/chunks/6ddcf43e90bae36055eb8b9d9512db3ffefe6cf6.457645076aa242d02b47.js",
+      "static/chunks/c958e449492add679dd296f3bb411dfa5db482be.e9b76a5f7f98d7c5e506.js",
+      "static/chunks/b4d687173211d9c38b4433c691410d32400dbe1c.5376cd12d4c73261ac3c.js",
+      "static/chunks/pages/index-6453eabbdd02af70d661.js"
+    ],
+    "/404": [
+      "static/chunks/main-9916ff5cfa7f288580a4.js",
+      "static/chunks/webpack-caf1ff17dad824a6f46b.js",
+      "static/chunks/framework.d3c9d973ca0cf43312e7.js",
+      "static/chunks/commons.791bd1b020fd52da39ef.js",
+      "static/chunks/6ddcf43e90bae36055eb8b9d9512db3ffefe6cf6.457645076aa242d02b47.js",
+      "static/chunks/c958e449492add679dd296f3bb411dfa5db482be.e9b76a5f7f98d7c5e506.js",
+      "static/chunks/pages/404-2a2972db3d5ffd7e6005.js"
     ],
     "/_app": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/_app.js"
+      "static/chunks/main-9916ff5cfa7f288580a4.js",
+      "static/chunks/webpack-caf1ff17dad824a6f46b.js",
+      "static/chunks/framework.d3c9d973ca0cf43312e7.js",
+      "static/chunks/commons.791bd1b020fd52da39ef.js",
+      "static/chunks/6ddcf43e90bae36055eb8b9d9512db3ffefe6cf6.457645076aa242d02b47.js",
+      "static/css/8576fe2b3a89a4671907.css",
+      "static/chunks/pages/_app-df8f8d4b037b82dbdd59.js"
     ],
     "/_error": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/_error.js"
+      "static/chunks/main-9916ff5cfa7f288580a4.js",
+      "static/chunks/webpack-caf1ff17dad824a6f46b.js",
+      "static/chunks/framework.d3c9d973ca0cf43312e7.js",
+      "static/chunks/commons.791bd1b020fd52da39ef.js",
+      "static/chunks/pages/_error-9f36b9e92c9f9739fd82.js"
+    ],
+    "/interviews": [
+      "static/chunks/main-9916ff5cfa7f288580a4.js",
+      "static/chunks/webpack-caf1ff17dad824a6f46b.js",
+      "static/chunks/framework.d3c9d973ca0cf43312e7.js",
+      "static/chunks/commons.791bd1b020fd52da39ef.js",
+      "static/chunks/6ddcf43e90bae36055eb8b9d9512db3ffefe6cf6.457645076aa242d02b47.js",
+      "static/chunks/c958e449492add679dd296f3bb411dfa5db482be.e9b76a5f7f98d7c5e506.js",
+      "static/chunks/b4d687173211d9c38b4433c691410d32400dbe1c.5376cd12d4c73261ac3c.js",
+      "static/chunks/pages/interviews-7d126f9523ca4d371de3.js"
+    ],
+    "/posts": [
+      "static/chunks/main-9916ff5cfa7f288580a4.js",
+      "static/chunks/webpack-caf1ff17dad824a6f46b.js",
+      "static/chunks/framework.d3c9d973ca0cf43312e7.js",
+      "static/chunks/commons.791bd1b020fd52da39ef.js",
+      "static/chunks/6ddcf43e90bae36055eb8b9d9512db3ffefe6cf6.457645076aa242d02b47.js",
+      "static/chunks/c958e449492add679dd296f3bb411dfa5db482be.e9b76a5f7f98d7c5e506.js",
+      "static/chunks/b4d687173211d9c38b4433c691410d32400dbe1c.5376cd12d4c73261ac3c.js",
+      "static/chunks/f5e0fbcaf2ff26ad2e92b103be3e04d99883c3e2.945e3d4d50b35871906e.js",
+      "static/chunks/pages/posts-89e9a4ce1c997e05046f.js"
+    ],
+    "/posts/a-place-to-start": [
+      "static/chunks/main-9916ff5cfa7f288580a4.js",
+      "static/chunks/webpack-caf1ff17dad824a6f46b.js",
+      "static/chunks/framework.d3c9d973ca0cf43312e7.js",
+      "static/chunks/commons.791bd1b020fd52da39ef.js",
+      "static/chunks/6ddcf43e90bae36055eb8b9d9512db3ffefe6cf6.457645076aa242d02b47.js",
+      "static/chunks/c958e449492add679dd296f3bb411dfa5db482be.e9b76a5f7f98d7c5e506.js",
+      "static/chunks/b4d687173211d9c38b4433c691410d32400dbe1c.5376cd12d4c73261ac3c.js",
+      "static/chunks/f5e0fbcaf2ff26ad2e92b103be3e04d99883c3e2.945e3d4d50b35871906e.js",
+      "static/chunks/bd01a3bd311ceb986eb3e10ee0c7f553b6813eb7.c6a5d373457065d0b264.js",
+      "static/chunks/pages/posts/a-place-to-start-5af8d3430bd8db1ab716.js"
+    ],
+    "/posts/page/[page]": [
+      "static/chunks/main-9916ff5cfa7f288580a4.js",
+      "static/chunks/webpack-caf1ff17dad824a6f46b.js",
+      "static/chunks/framework.d3c9d973ca0cf43312e7.js",
+      "static/chunks/commons.791bd1b020fd52da39ef.js",
+      "static/chunks/6ddcf43e90bae36055eb8b9d9512db3ffefe6cf6.457645076aa242d02b47.js",
+      "static/chunks/c958e449492add679dd296f3bb411dfa5db482be.e9b76a5f7f98d7c5e506.js",
+      "static/chunks/b4d687173211d9c38b4433c691410d32400dbe1c.5376cd12d4c73261ac3c.js",
+      "static/chunks/f5e0fbcaf2ff26ad2e92b103be3e04d99883c3e2.945e3d4d50b35871906e.js",
+      "static/chunks/pages/posts/page/[page]-3aca6dc4a40775c2e15f.js"
+    ],
+    "/posts/tags/[[...slug]]": [
+      "static/chunks/main-9916ff5cfa7f288580a4.js",
+      "static/chunks/webpack-caf1ff17dad824a6f46b.js",
+      "static/chunks/framework.d3c9d973ca0cf43312e7.js",
+      "static/chunks/commons.791bd1b020fd52da39ef.js",
+      "static/chunks/6ddcf43e90bae36055eb8b9d9512db3ffefe6cf6.457645076aa242d02b47.js",
+      "static/chunks/c958e449492add679dd296f3bb411dfa5db482be.e9b76a5f7f98d7c5e506.js",
+      "static/chunks/f5e0fbcaf2ff26ad2e92b103be3e04d99883c3e2.945e3d4d50b35871906e.js",
+      "static/chunks/pages/posts/tags/[[...slug]]-2c7699b8da678db776a1.js"
+    ],
+    "/posts/the-adventures-of-captain-sprill-part-four": [
+      "static/chunks/main-9916ff5cfa7f288580a4.js",
+      "static/chunks/webpack-caf1ff17dad824a6f46b.js",
+      "static/chunks/framework.d3c9d973ca0cf43312e7.js",
+      "static/chunks/commons.791bd1b020fd52da39ef.js",
+      "static/chunks/6ddcf43e90bae36055eb8b9d9512db3ffefe6cf6.457645076aa242d02b47.js",
+      "static/chunks/c958e449492add679dd296f3bb411dfa5db482be.e9b76a5f7f98d7c5e506.js",
+      "static/chunks/b4d687173211d9c38b4433c691410d32400dbe1c.5376cd12d4c73261ac3c.js",
+      "static/chunks/f5e0fbcaf2ff26ad2e92b103be3e04d99883c3e2.945e3d4d50b35871906e.js",
+      "static/chunks/bd01a3bd311ceb986eb3e10ee0c7f553b6813eb7.c6a5d373457065d0b264.js",
+      "static/chunks/pages/posts/the-adventures-of-captain-sprill-part-four-166440a5dd56f278d334.js"
+    ],
+    "/posts/the-adventures-of-captain-sprill-part-one": [
+      "static/chunks/main-9916ff5cfa7f288580a4.js",
+      "static/chunks/webpack-caf1ff17dad824a6f46b.js",
+      "static/chunks/framework.d3c9d973ca0cf43312e7.js",
+      "static/chunks/commons.791bd1b020fd52da39ef.js",
+      "static/chunks/6ddcf43e90bae36055eb8b9d9512db3ffefe6cf6.457645076aa242d02b47.js",
+      "static/chunks/c958e449492add679dd296f3bb411dfa5db482be.e9b76a5f7f98d7c5e506.js",
+      "static/chunks/b4d687173211d9c38b4433c691410d32400dbe1c.5376cd12d4c73261ac3c.js",
+      "static/chunks/f5e0fbcaf2ff26ad2e92b103be3e04d99883c3e2.945e3d4d50b35871906e.js",
+      "static/chunks/bd01a3bd311ceb986eb3e10ee0c7f553b6813eb7.c6a5d373457065d0b264.js",
+      "static/chunks/pages/posts/the-adventures-of-captain-sprill-part-one-99f489cc1226f079abff.js"
+    ],
+    "/posts/the-adventures-of-captain-sprill-part-three": [
+      "static/chunks/main-9916ff5cfa7f288580a4.js",
+      "static/chunks/webpack-caf1ff17dad824a6f46b.js",
+      "static/chunks/framework.d3c9d973ca0cf43312e7.js",
+      "static/chunks/commons.791bd1b020fd52da39ef.js",
+      "static/chunks/6ddcf43e90bae36055eb8b9d9512db3ffefe6cf6.457645076aa242d02b47.js",
+      "static/chunks/c958e449492add679dd296f3bb411dfa5db482be.e9b76a5f7f98d7c5e506.js",
+      "static/chunks/b4d687173211d9c38b4433c691410d32400dbe1c.5376cd12d4c73261ac3c.js",
+      "static/chunks/f5e0fbcaf2ff26ad2e92b103be3e04d99883c3e2.945e3d4d50b35871906e.js",
+      "static/chunks/bd01a3bd311ceb986eb3e10ee0c7f553b6813eb7.c6a5d373457065d0b264.js",
+      "static/chunks/pages/posts/the-adventures-of-captain-sprill-part-three-55292fcdc6eb648b7da3.js"
+    ],
+    "/posts/the-adventures-of-captain-sprill-part-two": [
+      "static/chunks/main-9916ff5cfa7f288580a4.js",
+      "static/chunks/webpack-caf1ff17dad824a6f46b.js",
+      "static/chunks/framework.d3c9d973ca0cf43312e7.js",
+      "static/chunks/commons.791bd1b020fd52da39ef.js",
+      "static/chunks/6ddcf43e90bae36055eb8b9d9512db3ffefe6cf6.457645076aa242d02b47.js",
+      "static/chunks/c958e449492add679dd296f3bb411dfa5db482be.e9b76a5f7f98d7c5e506.js",
+      "static/chunks/b4d687173211d9c38b4433c691410d32400dbe1c.5376cd12d4c73261ac3c.js",
+      "static/chunks/f5e0fbcaf2ff26ad2e92b103be3e04d99883c3e2.945e3d4d50b35871906e.js",
+      "static/chunks/bd01a3bd311ceb986eb3e10ee0c7f553b6813eb7.c6a5d373457065d0b264.js",
+      "static/chunks/pages/posts/the-adventures-of-captain-sprill-part-two-4734b9b7d2594ddc2a1f.js"
     ]
   },
   "ampFirstPages": []

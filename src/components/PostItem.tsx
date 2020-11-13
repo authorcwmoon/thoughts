@@ -3,11 +3,7 @@ import Date from "./Date";
 import NextLink from 'next/link';
 import { parseISO, format } from 'date-fns';
 import { useColorMode, Heading, Text, Flex, Box, Link } from '@chakra-ui/core';
-<<<<<<< HEAD
 // import ViewCounter from './ViewCounter';
-=======
-import ViewCounter from './ViewCounter';
->>>>>>> 30e104157c195a18ec52d2f794c6add046a407e0
 
 
 

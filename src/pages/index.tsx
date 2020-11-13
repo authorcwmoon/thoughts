@@ -175,7 +175,7 @@ export default function Index() {
                 Journal Article - The Adventures of Captain Sprill Part Four
                 </Text>
                 <Text as="i" mr={4}>
-                97%
+                100% Posted!
                 </Text>
                 </Flex>
                   <Slider mt={2} value={97}>
@@ -187,6 +187,37 @@ export default function Index() {
                   </Slider>      
 
                   </Box>
+
+                  <Box height="80px">
+
+
+                  <Flex
+                      flexDirection="row"
+                        justifyContent="space-between"
+                        alignItems="space-between"
+                        maxWidth="700px"
+                      >
+                      <Text as="i" ml={1}>
+                      Journal Article - The Adventures of Captain Sprill Part Five
+                      </Text>
+                      <Text as="i" mr={4}>
+                      11%
+                      </Text>
+                      </Flex>
+                        <Slider mt={2} value={23}>
+                        <SliderTrack bg="gray.300" />
+                        <SliderFilledTrack bg="gray.900" />
+                        <SliderThumb size={6}>
+                        <Box color="gray.900" as={MdAssignment} />
+                        </SliderThumb>
+                        </Slider>      
+
+                  </Box>
+
+
+
+
+
             <Box height="80px">
 
 

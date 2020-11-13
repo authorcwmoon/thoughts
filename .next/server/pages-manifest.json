@@ -1,16 +1,7 @@
 {
-  "/404": "pages/404.html",
   "/_app": "pages/_app.js",
-  "/": "pages/index.html",
-  "/interviews": "pages/interviews.html",
-  "/posts/a-place-to-start": "pages/posts/a-place-to-start.html",
-  "/posts": "pages/posts.js",
-  "/posts/page/[page]": "pages/posts/page/[page].js",
-  "/posts/tags/[[...slug]]": "pages/posts/tags/[[...slug]].js",
-  "/posts/the-adventures-of-captain-sprill-part-four": "pages/posts/the-adventures-of-captain-sprill-part-four.html",
-  "/posts/the-adventures-of-captain-sprill-part-one": "pages/posts/the-adventures-of-captain-sprill-part-one.html",
-  "/posts/the-adventures-of-captain-sprill-part-three": "pages/posts/the-adventures-of-captain-sprill-part-three.html",
-  "/posts/the-adventures-of-captain-sprill-part-two": "pages/posts/the-adventures-of-captain-sprill-part-two.html",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/posts": "pages/posts.js"
 }

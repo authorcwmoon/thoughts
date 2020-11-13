@@ -1,6 +1,7 @@
-[build]
-  command  = "npm run build"
-  publish = ".next/server"
 
+[build]
+  publish = "dist"
+  command = "npm run export"
+  
 [dev]
   functions = "functions"

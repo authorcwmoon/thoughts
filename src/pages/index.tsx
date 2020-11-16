@@ -172,7 +172,7 @@ export default function Index() {
 
                 >
                 <Text as="i" ml={1}>
-                Journal Article - The Adventures of Captain Sprill Part Four
+                Journal Article - The Middles Part 1
                 </Text>
                 <Text as="i" mr={4}>
                 100% Posted!

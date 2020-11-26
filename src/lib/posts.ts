@@ -9,7 +9,7 @@ export type PostContent = {
   readonly date: string;
   readonly author: string;
   readonly summary: string;
-  readonly image: string;
+  readonly image: ImageData;
   readonly title: string;
   readonly slug: string;
   readonly tags?: string[];

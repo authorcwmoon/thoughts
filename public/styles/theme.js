@@ -4,7 +4,6 @@ import { theme as chakraTheme } from '@chakra-ui/core';
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-
 const theme = {
   ...chakraTheme,
   fonts: {
@@ -15,6 +14,7 @@ const theme = {
     main: 'Libre Baskerville, serif',
 
   },
+
 //   fontWeights: {
 //     ...chakraTheme.fontWeights,
 //     normal: 600,

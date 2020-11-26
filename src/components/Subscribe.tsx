@@ -76,10 +76,10 @@ const Subscribe = () => {
       alignSelf="center"
     >
       <Heading as="h5" size="lg" mb={2}>
-        Read my journal.
+        Don't miss an adventure!
       </Heading>
       <Text>
-        Susbscribe for regular updates on my character's adventures
+        Susbscribe for regular updates on my character's journeys
       </Text>
       across space and time. 
       <InputGroup size="md" mt={4}>
@@ -101,6 +101,9 @@ const Subscribe = () => {
           </Button>
         </InputRightElement>
       </InputGroup>
+      <Text mt={4} fontStyle="i">
+        P.S. I appreciate your support, it's the reason I keep writing!
+      </Text>
     </Box>
   );
 };

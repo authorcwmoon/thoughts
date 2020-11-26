@@ -4,6 +4,7 @@ import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
 import Subscribe from "../components/Subscribe";
+import SubscribeAlt from "../components/SubscribeAlt";
 import NextLink from 'next/link';
 import React from "react";
 import { PostContent } from "../lib/posts";
@@ -100,6 +101,8 @@ export default function Index() {
            <Text mt={2} as="b">
 
            </Text>
+
+           <SubscribeAlt/>
            
            </Flex>
 

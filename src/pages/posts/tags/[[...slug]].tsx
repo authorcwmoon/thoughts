@@ -24,6 +24,7 @@ export default function Index({ posts, tag, pagination, page }: Props) {
   const title = tag.name;
   return (
     <Layout>
+
        <Stack
         as="main"
         spacing={8}

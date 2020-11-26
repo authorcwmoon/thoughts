@@ -31,6 +31,7 @@
     "isomorphic-fetch": "^3.0.0",
     "js-yaml": "^3.14.0",
     "logrocket": "^1.0.14",
+    "logrocket-react": "^4.0.1",
     "next": "9.5.1",
     "next-mdx-enhanced": "^3.1.0",
     "node-fetch": "^2.6.1",

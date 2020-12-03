@@ -205,10 +205,10 @@ export default function Index() {
                       Journal Article - The Adventures of Captain Sprill Part Five
                       </Text>
                       <Text as="i" mr={4}>
-                      11%
+                      100% Posted!
                       </Text>
                       </Flex>
-                        <Slider mt={2} value={23}>
+                        <Slider mt={2} value={100}>
                         <SliderTrack bg="gray.300" />
                         <SliderFilledTrack bg="gray.900" />
                         <SliderThumb size={6}>

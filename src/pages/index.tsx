@@ -176,13 +176,13 @@ export default function Index() {
 
                 >
                 <Text as="i" ml={1}>
-                Journal Article - The Middles Part 1
+                Journal Article - The Middles Part 2
                 </Text>
                 <Text as="i" mr={4}>
-                100% Posted!
+                45
                 </Text>
                 </Flex>
-                  <Slider mt={2} value={97}>
+                  <Slider mt={2} value={45}>
                   <SliderTrack bg="gray.300" />
                   <SliderFilledTrack bg="gray.900" />
                   <SliderThumb size={6}>

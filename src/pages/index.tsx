@@ -179,7 +179,7 @@ export default function Index() {
                 Journal Article - The Middles Part 2
                 </Text>
                 <Text as="i" mr={4}>
-                45
+                45%
                 </Text>
                 </Flex>
                   <Slider mt={2} value={45}>

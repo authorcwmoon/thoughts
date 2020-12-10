@@ -3,5 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/posts": "pages/posts.js"
+  "/posts": "pages/posts.js",
+  "/posts/the-middles-kora-kelley-and-friends-worse-than-family-part-2": "pages/posts/the-middles-kora-kelley-and-friends-worse-than-family-part-2.js"
 }

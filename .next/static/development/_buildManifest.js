@@ -1,1 +1,1 @@
-self.__BUILD_MANIFEST = {"/_error":["static\u002Fchunks\u002Fpages\u002F_error.js"],"/posts":["static\u002Fchunks\u002Fpages\u002Fposts.js"],"/posts/tags/[[...slug]]":["static\u002Fchunks\u002Fpages\u002Fposts\u002Ftags\u002F[[...slug]].js"]};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
+self.__BUILD_MANIFEST = {"/_error":["static\u002Fchunks\u002Fpages\u002F_error.js"],"/posts/snowflake-white-lies":["static\u002Fchunks\u002Fpages\u002Fposts\u002Fsnowflake-white-lies.js"]};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

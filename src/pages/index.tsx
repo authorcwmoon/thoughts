@@ -97,7 +97,7 @@ export default function Index() {
             Preface - Who Should Read My Journal
           </Heading>
           <Text>
-          If you've burnt yourself out on self-help gurus and life advice podcasts this is a place for you. I boil down notes from extraordinary people and turn them into fiction.  My characters learn the things I wish I knew, in the magical ways I wish I could.  
+          This journal is a place where I translate life experiences into short fictions. If you're looking for a divergent path from your next self-help novel, maybe this place is for you. My characters learn the things I wish I knew, in the magical ways I wish I could.  
            </Text>
            <Text mt={2} as="b">
 
@@ -137,7 +137,7 @@ export default function Index() {
             Works in Progress
           </Heading>
           <Text mt={2}>
-          I post at least once on this site every week. If you have an idea for a story, interview guest, or any other cool topics, I can be reached at 
+          I post at least twice on this site every month. If you have an idea for a story, interview guest, or any other cool topics, I can be reached at 
           <Link fontStyle="italics" rel="stylesheet" href="mailto:author@cwmoon.com" isExternal> author@cwmoon.com</Link>
          
           
@@ -176,10 +176,10 @@ export default function Index() {
 
                 >
                 <Text as="i" ml={1}>
-                Journal Article - The Middles Part 2
+                Journal Article - The Middles Part 4
                 </Text>
                 <Text as="i" mr={4}>
-                45%
+                100% Posted!
                 </Text>
                 </Flex>
                   <Slider mt={2} value={45}>
@@ -202,10 +202,10 @@ export default function Index() {
                         maxWidth="700px"
                       >
                       <Text as="i" ml={1}>
-                      Journal Article - The Adventures of Captain Sprill Part Five
+                      Journal Article - The Adventures of Captain Sprill Part Eight
                       </Text>
                       <Text as="i" mr={4}>
-                      100% Posted!
+                      52% 
                       </Text>
                       </Flex>
                         <Slider mt={2} value={100}>
@@ -235,7 +235,7 @@ export default function Index() {
                 Interview Article - Dynamic Duo Series 
                 </Text>
                 <Text as="i" mr={4}>
-                23%
+                33%
                 </Text>
                 </Flex>
                   <Slider mt={2} value={23}>

@@ -23,11 +23,6 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
-    ],
-    "/posts/snowflake-white-lies": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/posts/snowflake-white-lies.js"
     ]
   },
   "ampFirstPages": []

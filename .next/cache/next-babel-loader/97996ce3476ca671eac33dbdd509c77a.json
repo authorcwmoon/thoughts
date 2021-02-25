@@ -1,1 +1,0 @@
-{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport { format, formatISO } from \"date-fns\";\nexport default function Date(_ref) {\n  var date = _ref.date;\n  return __jsx(\"time\", {\n    dateTime: formatISO(date)\n  }, __jsx(\"span\", null, format(date, \"LLLL d, yyyy\")));\n}","map":null,"metadata":{},"sourceType":"module"}
